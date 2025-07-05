@@ -11,10 +11,10 @@ import copy
 from collections import defaultdict
 from typing import Dict, Any, Tuple, List
 
-# Assuming these are your project's modules
+# Updated imports to use the new modules
 from .model import get_model
 from .frameworks import BICLFramework, EWC
-from .data import generate_diverse_tasks
+from .data import get_benchmark_tasks, generate_diverse_tasks # Added get_benchmark_tasks
 from .utils import reset_weights
 
 class ExperimentRunner:
@@ -27,9 +27,22 @@ class ExperimentRunner:
     def __init__(self, config: Dict[str, Any]):
         """
         Initializes the experiment runner with a configuration dictionary.
+
+        Args:
+            config (Dict[str, Any]): The master configuration object.
         """
         self.config = config
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        
+        # --- EDITED FOR APPLE SILICON SUPPORT ---
+        # This logic now correctly detects and prioritizes CUDA, then Apple's
+        # Metal Performance Shaders (MPS) for M-series chips, and finally CPU.
+        if torch.cuda.is_available():
+            self.device = torch.device("cuda")
+        elif torch.backends.mps.is_available():
+            self.device = torch.device("mps")
+        else:
+            self.device = torch.device("cpu")
+            
         logging.info(f"ExperimentRunner initialized. Using device: {self.device}")
 
     def _train_one_task(self, model: nn.Module, train_dataset: DataLoader, method: str, 
@@ -42,9 +55,15 @@ class ExperimentRunner:
                                weight_decay=train_config['weight_decay'])
         scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', patience=10, factor=0.5)
 
-        val_size = len(train_dataset) // 5
+        # To prevent issues with small datasets, ensure val_size is at least 1
+        val_size = max(1, len(train_dataset) // 5)
         train_size = len(train_dataset) - val_size
-        train_subset, val_subset = random_split(train_dataset, [train_size, val_size])
+        
+        # Handle the edge case where the dataset is too small for a split
+        if train_size == 0:
+            train_subset, val_subset = train_dataset, train_dataset
+        else:
+            train_subset, val_subset = random_split(train_dataset, [train_size, val_size])
         
         train_loader = DataLoader(train_subset, batch_size=train_config['batch_size'], shuffle=True)
         val_loader = DataLoader(val_subset, batch_size=train_config['batch_size'])
@@ -79,7 +98,7 @@ class ExperimentRunner:
                     batch_X, batch_y = batch_X.to(self.device), batch_y.to(self.device)
                     val_loss += nn.functional.cross_entropy(model(batch_X), batch_y).item()
             
-            avg_val_loss = val_loss / len(val_loader)
+            avg_val_loss = val_loss / len(val_loader) if len(val_loader) > 0 else float('inf')
             scheduler.step(avg_val_loss)
 
             if train_config['early_stopping']['enabled']:
@@ -106,7 +125,7 @@ class ExperimentRunner:
                     _, predicted = torch.max(outputs.data, 1)
                     total += batch_y.size(0)
                     correct += (predicted == batch_y).sum().item()
-                accuracies[i] = correct / total
+                accuracies[i] = correct / total if total > 0 else 0
         return accuracies
 
     def _calculate_metrics(self, task_results: Dict[int, Dict[int, float]]) -> Tuple[float, float]:
@@ -134,15 +153,18 @@ class ExperimentRunner:
         """
         trials = []
         methods = self.config['experiment']['methods_to_run']
+        logging.info("Generating hyperparameter trials...")
         
         for method in methods:
+            logging.debug(f"  Processing method: '{method}'")
             framework_config = self.config['frameworks'].get(method, {})
             if not framework_config:
+                logging.debug(f"    -> No framework config found. Creating a single trial.")
                 trials.append({'id': method, 'method': method, 'params': {}})
                 continue
 
-            param_lists = {k: v for k, v in framework_config.items() if isinstance(v, list)}
-            fixed_params = {k: v for k, v in framework_config.items() if not isinstance(v, list)}
+            param_lists = {k: v for k, v in framework_config.items() if isinstance(v, (list, tuple))}
+            fixed_params = {k: v for k, v in framework_config.items() if not isinstance(v, (list, tuple))}
             
             if not param_lists:
                 trials.append({'id': method, 'method': method, 'params': fixed_params})
@@ -154,10 +176,10 @@ class ExperimentRunner:
             for combo in param_combinations:
                 trial_params = fixed_params.copy()
                 trial_id_parts = [method]
-                
                 for name, value in zip(param_names, combo):
                     trial_params[name] = value
-                    trial_id_parts.append(f"{name.replace('_', '')[:4]}{value}")
+                    short_name = ''.join([c for c in name if c.isupper()]) or name.replace('_', '')[:4]
+                    trial_id_parts.append(f"{short_name}{value}")
                 
                 trials.append({
                     'id': "_".join(trial_id_parts),
@@ -167,7 +189,7 @@ class ExperimentRunner:
                 
         logging.info(f"Generated {len(trials)} unique trials for the experiment.")
         for trial in trials:
-            logging.debug(f"  - Trial generated: {trial['id']}")
+            logging.info(f"  - Trial generated: {trial['id']}")
         return trials
 
     def run_comprehensive_experiment(self) -> Tuple[Dict, Dict, Dict]:
@@ -186,7 +208,14 @@ class ExperimentRunner:
 
         for run in range(exp_config['num_runs']):
             logging.info(f"--- Starting Statistical Run {run + 1}/{exp_config['num_runs']} ---")
-            tasks = generate_diverse_tasks(self.config)
+            
+            # --- Select data generation based on config ---
+            if 'benchmark' in self.config['data']:
+                logging.info(f"Loading benchmark dataset: {self.config['data']['benchmark']}")
+                tasks = get_benchmark_tasks(self.config)
+            else:
+                logging.info("Generating diverse synthetic tasks...")
+                tasks = generate_diverse_tasks(self.config)
             
             for i, trial in enumerate(trials):
                 trial_id = trial['id']
