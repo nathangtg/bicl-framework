@@ -1,23 +1,21 @@
-# Configuration for the Bio-Inspired Continual Learning Experiment
 experiment:
-  name: "BICL_Comprehensive_Analysis"
+  name: "BICL_CIFAR10_FineTuning"
   seed: 42
   num_runs: 5
-  methods_to_run: ['vanilla', 'unified', 'ewc']
+  methods_to_run: ['vanilla', 'bicl', 'ewc']
 
 data:
-  num_tasks: 5
-  n_samples_per_task: 2000
-  task_difficulty: 'progressive'
+  benchmark: 'cifar10' 
+  num_tasks: 5         
+  data_path: './data'  
 
 model:
-  input_size: 100
-  hidden_sizes: [256, 128]
-  num_classes: 10
-  dropout_rate: 0.3
+  name: 'resnet18'     
+  pretrained: true
+  num_classes: 10      # Total number of classes in CIFAR-10
 
 training:
-  epochs: 80
+  epochs: 50
   batch_size: 64
   learning_rate: 0.001
   weight_decay: 0.0001
@@ -28,9 +26,18 @@ training:
 
 frameworks:
   ewc:
-    lambda: 1000.0
-  unified:
+    lambda: 5000.0
+  bicl: 
+    # Use the best value from the previous sweep as a fixed parameter
+    beta_stability: 2000.0
+    importance_decay: 0.99
+    homeostasis_alpha: 0.001
+    homeostasis_beta_h: 10.0
+    homeostasis_tau: 0.5
+    forget_lambda: 0.0001
+    # --- Fine-tune these two parameters ---
+    gamma_homeo: [0.01, 0.1, 1.0]
+    delta_forget: [0.01, 0.1, 1.0]
+
+  unified: 
     beta_values: [0.1, 0.5, 1.0, 2.0, 5.0]
-    divergence_type: 'adaptive'
-    memory_buffer_size: 1000
-    replay_ratio: 0.3

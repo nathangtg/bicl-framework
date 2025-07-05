@@ -1,30 +1,51 @@
+# src/experiment.py
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, random_split
 import time
 import numpy as np
+import logging
+import itertools
+import copy
 from collections import defaultdict
+from typing import Dict, Any, Tuple, List
 
+# Assuming these are your project's modules
 from .model import get_model
-from .frameworks import EnhancedUnifiedFramework, EnhancedEWC
+from .frameworks import BICLFramework, EWC
 from .data import generate_diverse_tasks
 from .utils import reset_weights
 
 class ExperimentRunner:
-    def __init__(self, config):
+    """
+    Orchestrates the entire continual learning experiment pipeline. This version
+    is enhanced to support systematic hyperparameter tuning (grid search) by
+    generating and running a "trial" for each parameter combination specified
+    in the configuration file.
+    """
+    def __init__(self, config: Dict[str, Any]):
+        """
+        Initializes the experiment runner with a configuration dictionary.
+        """
         self.config = config
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        print(f"Using device: {self.device}")
+        logging.info(f"ExperimentRunner initialized. Using device: {self.device}")
 
-    def _train_one_task(self, model, train_dataset, method, cl_framework, beta, task_id):
+    def _train_one_task(self, model: nn.Module, train_dataset: DataLoader, method: str, 
+                        cl_framework: Any, task_id: int) -> None:
+        """
+        Handles the complete training and validation loop for a single task.
+        """
         train_config = self.config['training']
-        optimizer = optim.Adam(model.parameters(), lr=train_config['learning_rate'], weight_decay=train_config['weight_decay'])
+        optimizer = optim.Adam(model.parameters(), lr=train_config['learning_rate'], 
+                               weight_decay=train_config['weight_decay'])
         scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', patience=10, factor=0.5)
 
         val_size = len(train_dataset) // 5
         train_size = len(train_dataset) - val_size
         train_subset, val_subset = random_split(train_dataset, [train_size, val_size])
+        
         train_loader = DataLoader(train_subset, batch_size=train_config['batch_size'], shuffle=True)
         val_loader = DataLoader(val_subset, batch_size=train_config['batch_size'])
 
@@ -36,15 +57,15 @@ class ExperimentRunner:
             for batch_X, batch_y in train_loader:
                 batch_X, batch_y = batch_X.to(self.device), batch_y.to(self.device)
                 optimizer.zero_grad()
+                
                 outputs = model(batch_X)
                 base_loss = nn.functional.cross_entropy(outputs, batch_y)
                 
-                if method == 'unified':
-                    cl_framework.add_to_memory(batch_X, batch_y)
-                    total_loss = cl_framework.unified_loss(base_loss, self.device, task_id)
+                if method == 'bicl':
+                    total_loss = cl_framework.bicl_loss(base_loss)
                 elif method == 'ewc':
                     total_loss = cl_framework.ewc_loss(base_loss)
-                else: # vanilla
+                else:  # 'vanilla'
                     total_loss = base_loss
                 
                 total_loss.backward()
@@ -57,6 +78,7 @@ class ExperimentRunner:
                 for batch_X, batch_y in val_loader:
                     batch_X, batch_y = batch_X.to(self.device), batch_y.to(self.device)
                     val_loss += nn.functional.cross_entropy(model(batch_X), batch_y).item()
+            
             avg_val_loss = val_loss / len(val_loader)
             scheduler.step(avg_val_loss)
 
@@ -67,77 +89,151 @@ class ExperimentRunner:
                 else:
                     patience_counter += 1
                 if patience_counter >= train_config['early_stopping']['patience']:
-                    print(f"  Early stopping at epoch {epoch + 1}")
+                    logging.debug(f"    Early stopping at epoch {epoch + 1}")
                     break
-        return
 
-    def _evaluate_one_task(self, model, test_dataset):
+    def _evaluate_on_tasks(self, model: nn.Module, tasks: list) -> Dict[int, float]:
+        """Evaluates the model's performance on a list of test datasets."""
         model.eval()
-        correct, total = 0, 0
-        loader = DataLoader(test_dataset, batch_size=self.config['training']['batch_size'])
+        accuracies = {}
         with torch.no_grad():
-            for batch_X, batch_y in loader:
-                batch_X, batch_y = batch_X.to(self.device), batch_y.to(self.device)
-                outputs = model(batch_X)
-                _, predicted = torch.max(outputs.data, 1)
-                total += batch_y.size(0)
-                correct += (predicted == batch_y).sum().item()
-        return correct / total
+            for i, (_, test_ds) in enumerate(tasks):
+                correct, total = 0, 0
+                loader = DataLoader(test_ds, batch_size=self.config['training']['batch_size'])
+                for batch_X, batch_y in loader:
+                    batch_X, batch_y = batch_X.to(self.device), batch_y.to(self.device)
+                    outputs = model(batch_X)
+                    _, predicted = torch.max(outputs.data, 1)
+                    total += batch_y.size(0)
+                    correct += (predicted == batch_y).sum().item()
+                accuracies[i] = correct / total
+        return accuracies
 
-    def run_comprehensive_experiment(self):
+    def _calculate_metrics(self, task_results: Dict[int, Dict[int, float]]) -> Tuple[float, float]:
+        """Calculates average accuracy and Backward Transfer (BWT)."""
+        num_tasks = len(task_results)
+        if num_tasks == 0: return 0.0, 0.0
+        
+        final_accuracies = [task_results[num_tasks - 1].get(i, 0) for i in range(num_tasks)]
+        avg_accuracy = np.mean(final_accuracies)
+        
+        bwt = 0.0
+        if num_tasks > 1:
+            for i in range(num_tasks - 1):
+                acc_after_final = task_results[num_tasks - 1].get(i, 0)
+                acc_at_learning = task_results[i].get(i, 0)
+                bwt += (acc_after_final - acc_at_learning)
+            bwt /= (num_tasks - 1)
+
+        return avg_accuracy, bwt
+
+    def _generate_trials(self) -> List[Dict[str, Any]]:
+        """
+        Generates a list of experiment trials based on hyperparameter lists
+        in the configuration file. This enables grid search.
+        """
+        trials = []
+        methods = self.config['experiment']['methods_to_run']
+        
+        for method in methods:
+            framework_config = self.config['frameworks'].get(method, {})
+            if not framework_config:
+                trials.append({'id': method, 'method': method, 'params': {}})
+                continue
+
+            param_lists = {k: v for k, v in framework_config.items() if isinstance(v, list)}
+            fixed_params = {k: v for k, v in framework_config.items() if not isinstance(v, list)}
+            
+            if not param_lists:
+                trials.append({'id': method, 'method': method, 'params': fixed_params})
+                continue
+
+            param_names = list(param_lists.keys())
+            param_combinations = list(itertools.product(*param_lists.values()))
+            
+            for combo in param_combinations:
+                trial_params = fixed_params.copy()
+                trial_id_parts = [method]
+                
+                for name, value in zip(param_names, combo):
+                    trial_params[name] = value
+                    trial_id_parts.append(f"{name.replace('_', '')[:4]}{value}")
+                
+                trials.append({
+                    'id': "_".join(trial_id_parts),
+                    'method': method,
+                    'params': trial_params
+                })
+                
+        logging.info(f"Generated {len(trials)} unique trials for the experiment.")
+        for trial in trials:
+            logging.debug(f"  - Trial generated: {trial['id']}")
+        return trials
+
+    def run_comprehensive_experiment(self) -> Tuple[Dict, Dict, Dict]:
+        """
+        Runs the full, multi-run statistical experiment, iterating through all
+        generated hyperparameter trials.
+        """
         exp_config = self.config['experiment']
-        methods = exp_config['methods_to_run']
         num_tasks = self.config['data']['num_tasks']
         
-        all_results = {m: {f'task_{i}': [] for i in range(num_tasks)} for m in methods}
-        forgetting_results = {m: [] for m in methods}
-        complexity_results = {m: {'time': [], 'fisher_time': []} for m in methods}
+        trials = self._generate_trials()
+        
+        all_accuracies = {t['id']: [] for t in trials}
+        all_bwt = {t['id']: [] for t in trials}
+        all_complexity = {t['id']: defaultdict(list) for t in trials}
 
-        print(f"Running {exp_config['num_runs']} experiments with {num_tasks} tasks each...")
         for run in range(exp_config['num_runs']):
-            print(f"\n🔄 RUN {run + 1}/{exp_config['num_runs']}")
+            logging.info(f"--- Starting Statistical Run {run + 1}/{exp_config['num_runs']} ---")
             tasks = generate_diverse_tasks(self.config)
             
-            for method in methods:
-                print(f"  Testing {method.upper()}...")
+            for i, trial in enumerate(trials):
+                trial_id = trial['id']
+                method = trial['method']
+                
+                logging.info(f"  -- Starting Trial {i+1}/{len(trials)}: {trial_id} --")
                 model = get_model(self.config).to(self.device)
                 model.apply(reset_weights)
                 
+                trial_config = copy.deepcopy(self.config)
+                trial_config['frameworks'][method] = trial['params']
+
                 cl_framework = None
-                if method == 'ewc': cl_framework = EnhancedEWC(model, self.config)
-                elif method == 'unified': cl_framework = EnhancedUnifiedFramework(model, self.config)
+                if method == 'ewc':
+                    cl_framework = EWC(model, trial_config, self.device)
+                elif method == 'bicl':
+                    cl_framework = BICLFramework(model, trial_config, self.device)
                 
                 method_time, fisher_time = 0, 0
-                task_accuracies = []
-                beta = self.config['frameworks']['unified']['beta_values'][run % len(self.config['frameworks']['unified']['beta_values'])]
+                task_results_for_run = defaultdict(dict)
 
-                for task_idx, (train_ds, test_ds) in enumerate(tasks):
-                    print(f"    Task {task_idx + 1}/{num_tasks} - ", end="")
-                    if method == 'ewc' and task_idx > 0:
-                        prev_train_ds, _ = tasks[task_idx-1]
-                        fisher_start = time.time()
-                        cl_framework.compute_fisher_information(DataLoader(prev_train_ds, batch_size=64), self.device)
-                        fisher_time += time.time() - fisher_start
-                        cl_framework.save_optimal_params()
+                for task_idx in range(num_tasks):
+                    train_ds, _ = tasks[task_idx]
+                    logging.info(f"    Training on Task {task_idx + 1}/{num_tasks}...")
                     
                     start_time = time.time()
-                    self._train_one_task(model, train_ds, method, cl_framework, beta, task_idx)
+                    self._train_one_task(model, train_ds, method, cl_framework, task_idx)
                     method_time += time.time() - start_time
                     
-                    current_acc = self._evaluate_one_task(model, test_ds)
-                    task_accuracies.append(current_acc)
-                    print(f"Acc: {current_acc:.3f}")
-                    
-                    if method == 'unified' and task_idx > 0:
-                        cl_framework.set_reference_parameters(task_id=task_idx)
+                    current_accuracies = self._evaluate_on_tasks(model, tasks[:task_idx+1])
+                    task_results_for_run[task_idx] = current_accuracies
+                    logging.debug(f"      Accuracies after task {task_idx+1}: {current_accuracies}")
 
-                final_accuracies = [self._evaluate_one_task(model, test_ds) for _, test_ds in tasks]
-                for i, acc in enumerate(final_accuracies): all_results[method][f'task_{i}'].append(acc)
+                    if method == 'ewc':
+                        loader = DataLoader(train_ds, batch_size=self.config['training']['batch_size'])
+                        fisher_start = time.time()
+                        cl_framework.on_task_finish(loader)
+                        fisher_time += time.time() - fisher_start
+                    elif method == 'bicl':
+                        cl_framework.on_task_finish()
+
+                avg_acc, bwt = self._calculate_metrics(task_results_for_run)
+                all_accuracies[trial_id].append(avg_acc)
+                all_bwt[trial_id].append(bwt)
+                all_complexity[trial_id]['time'].append(method_time)
+                all_complexity[trial_id]['fisher_time'].append(fisher_time)
                 
-                forgetting = np.mean([max(0, task_accuracies[i] - final_accuracies[i]) for i in range(len(task_accuracies))])
-                forgetting_results[method].append(forgetting)
-                complexity_results[method]['time'].append(method_time)
-                complexity_results[method]['fisher_time'].append(fisher_time)
-                print(f"    Forget: {forgetting:.3f}, Time: {method_time:.1f}s")
+                logging.info(f"    Trial complete. Avg Acc: {avg_acc:.3f}, BWT: {bwt:.3f}, Time: {method_time:.1f}s")
                 
-        return all_results, forgetting_results, complexity_results
+        return all_accuracies, all_bwt, all_complexity
