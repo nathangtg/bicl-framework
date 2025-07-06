@@ -1,0 +1,52 @@
+# --- FINAL, STABLE CONFIG FOR VALIDATION ---
+
+experiment:
+  name: "BICL_CIFAR10_FINAL_VALIDATION"
+  seed: 42
+  num_runs: 1 # A single run is enough to prove it works.
+  methods_to_run: ['bicl']
+
+data:
+  benchmark: 'cifar10'
+  num_tasks: 5
+  data_path: './data'
+  # --- Using a 20% subset for speed ---
+  subset_fraction: 0.2
+
+model:
+  # --- Using the efficient TinyNet model ---
+  name: 'tinynet'
+  pretrained: false
+  num_classes: 10
+
+training:
+  # --- FINAL, CORRECTED TRAINING PARAMETERS ---
+  epochs: 20                  # Increased epochs to give the cautious optimizer time to converge.
+  batch_size: 64              # Smaller batch size for more stable gradient updates.
+  
+  # --- CRITICAL FIX 1: A more cautious learning rate ---
+  learning_rate: 0.0001       # Reduced LR by a factor of 10 to respect the regularization.
+  
+  weight_decay: 0.0001
+  gradient_clip_norm: 1.0
+  early_stopping:
+    enabled: true
+    patience: 5               # Increased patience to allow for slower learning.
+
+frameworks:
+  ewc:
+    lambda: 5000.0 # Not used, but here for completeness
+  bicl:
+    # --- CRITICAL FIX 2: A strong penalty to match the cautious LR ---
+    beta_stability: 100.0
+    
+    # --- The other subtle regularizers ---
+    gamma_homeo: 0.001
+    delta_forget: 0.001
+    
+    # --- Other framework parameters ---
+    importance_decay: 0.99
+    homeostasis_alpha: 0.001
+    homeostasis_beta_h: 10.0
+    homeostasis_tau: 0.5
+    forget_lambda: 0.0001
