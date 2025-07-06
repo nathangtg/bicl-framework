@@ -1,0 +1,1437 @@
+2025-07-06 20:20:46,951 [INFO] 🔧 Using device: mps
+2025-07-06 20:20:46,962 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 20:20:46,963 [INFO] 🔬 Research seed set to 42 for reproducibility
+2025-07-06 20:20:49,753 [INFO] 📊 Using 10% subset: 5,000 samples
+2025-07-06 20:20:52,543 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:22:19,597 [INFO] 🔧 Using device: mps
+2025-07-06 20:22:19,608 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 20:22:19,609 [INFO] 🔬 Research seed set to 42 for reproducibility
+2025-07-06 20:22:22,419 [INFO] 📊 Using 10% subset: 5,000 samples
+2025-07-06 20:22:25,201 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:22:26,850 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:22:27,619 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:22:28,402 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:22:29,193 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:22:29,988 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:22:30,038 [INFO] ============================================================
+2025-07-06 20:22:30,039 [INFO] 🔬 EXPERIMENT 1: BASELINE PERFORMANCE ANALYSIS
+2025-07-06 20:22:30,039 [INFO] ============================================================
+2025-07-06 20:22:30,040 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 20:22:30,040 [INFO] 🔬 Starting research trial: Baseline_Fine_Tuning
+2025-07-06 20:22:32,855 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 20:22:36,688 [INFO] 🎯 Initializing Fine-tuning Baseline (Control Condition)
+2025-07-06 20:22:36,689 [INFO] 📚 Fine-tuning baseline initialized
+2025-07-06 20:22:36,689 [INFO] 🎯 Training Task 1/5
+2025-07-06 20:29:45,239 [INFO] 🔧 Using device: mps
+2025-07-06 20:29:45,251 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 20:29:45,253 [INFO] 🔬 Research seed set to 42 for reproducibility
+2025-07-06 20:29:48,042 [INFO] 📊 Using 10% subset: 5,000 samples
+2025-07-06 20:29:50,840 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:29:52,506 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:29:53,269 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:29:54,058 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:29:54,874 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:29:55,647 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:29:55,679 [INFO] ============================================================
+2025-07-06 20:29:55,679 [INFO] 🔬 EXPERIMENT 1: BASELINE PERFORMANCE ANALYSIS
+2025-07-06 20:29:55,680 [INFO] ============================================================
+2025-07-06 20:29:55,681 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 20:29:55,681 [INFO] 🔬 Starting research trial: Baseline_Fine_Tuning
+2025-07-06 20:29:58,513 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 20:30:02,206 [INFO] 🎯 Initializing Fine-tuning Baseline (Control Condition)
+2025-07-06 20:30:02,207 [INFO] 📚 Fine-tuning baseline initialized
+2025-07-06 20:30:02,207 [INFO] 🎯 Training Task 1/5
+2025-07-06 20:40:32,907 [INFO] 🔧 Using device: mps
+2025-07-06 20:40:32,918 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 20:40:32,919 [INFO] 🔬 Research seed set to 42 for reproducibility
+2025-07-06 20:40:35,788 [INFO] 📊 Using 10% subset: 5,000 samples
+2025-07-06 20:40:38,650 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:40:40,330 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:40:41,115 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:40:41,911 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:40:42,709 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:40:43,498 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:40:43,531 [INFO] ============================================================
+2025-07-06 20:40:43,532 [INFO] 🔬 EXPERIMENT 1: BASELINE PERFORMANCE ANALYSIS
+2025-07-06 20:40:43,532 [INFO] ============================================================
+2025-07-06 20:40:43,533 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 20:40:43,533 [INFO] 🔬 Starting research trial: Baseline_Fine_Tuning
+2025-07-06 20:40:46,331 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 20:40:50,355 [INFO] 🎯 Initializing Fine-tuning Baseline (Control Condition)
+2025-07-06 20:40:50,356 [INFO] 📚 Fine-tuning baseline initialized
+2025-07-06 20:40:50,356 [INFO] 🎯 Training Task 1/5
+2025-07-06 20:40:51,794 [INFO]    Epoch  1/20: Loss = 0.8982
+2025-07-06 20:40:53,274 [INFO]    Epoch  6/20: Loss = 0.1944
+2025-07-06 20:40:54,792 [INFO]    Epoch 11/20: Loss = 0.0806
+2025-07-06 20:40:56,267 [INFO]    Epoch 16/20: Loss = 0.0327
+2025-07-06 20:40:57,443 [INFO]    Epoch 20/20: Loss = 0.0184
+2025-07-06 20:40:57,685 [INFO]    📊 Task 1 accuracy: 0.8330
+2025-07-06 20:40:57,685 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:40:57,686 [INFO] 🎯 Training Task 2/5
+2025-07-06 20:40:57,992 [INFO]    Epoch  1/20: Loss = 2.4222
+2025-07-06 20:40:59,476 [INFO]    Epoch  6/20: Loss = 0.3935
+2025-07-06 20:41:00,979 [INFO]    Epoch 11/20: Loss = 0.1916
+2025-07-06 20:41:02,432 [INFO]    Epoch 16/20: Loss = 0.0728
+2025-07-06 20:41:03,581 [INFO]    Epoch 20/20: Loss = 0.0427
+2025-07-06 20:41:03,680 [INFO]    📊 Task 1 accuracy: 0.0000
+2025-07-06 20:41:03,771 [INFO]    📊 Task 2 accuracy: 0.8340
+2025-07-06 20:41:03,772 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:41:03,772 [INFO] 🎯 Training Task 3/5
+2025-07-06 20:41:04,033 [INFO]    Epoch  1/20: Loss = 5.9474
+2025-07-06 20:41:05,533 [INFO]    Epoch  6/20: Loss = 0.1668
+2025-07-06 20:41:06,994 [INFO]    Epoch 11/20: Loss = 0.0296
+2025-07-06 20:41:08,427 [INFO]    Epoch 16/20: Loss = 0.0052
+2025-07-06 20:41:09,581 [INFO]    Epoch 20/20: Loss = 0.0015
+2025-07-06 20:41:09,682 [INFO]    📊 Task 1 accuracy: 0.0000
+2025-07-06 20:41:09,783 [INFO]    📊 Task 2 accuracy: 0.0000
+2025-07-06 20:41:09,874 [INFO]    📊 Task 3 accuracy: 0.9440
+2025-07-06 20:41:09,875 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:41:09,875 [INFO] 🎯 Training Task 4/5
+2025-07-06 20:41:10,158 [INFO]    Epoch  1/20: Loss = 5.4683
+2025-07-06 20:41:11,602 [INFO]    Epoch  6/20: Loss = 0.3641
+2025-07-06 20:41:13,038 [INFO]    Epoch 11/20: Loss = 0.2045
+2025-07-06 20:41:14,471 [INFO]    Epoch 16/20: Loss = 0.0450
+2025-07-06 20:41:15,624 [INFO]    Epoch 20/20: Loss = 0.0312
+2025-07-06 20:41:15,720 [INFO]    📊 Task 1 accuracy: 0.0000
+2025-07-06 20:41:15,821 [INFO]    📊 Task 2 accuracy: 0.0000
+2025-07-06 20:41:15,945 [INFO]    📊 Task 3 accuracy: 0.0000
+2025-07-06 20:41:16,036 [INFO]    📊 Task 4 accuracy: 0.8290
+2025-07-06 20:41:16,036 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:41:16,036 [INFO] 🎯 Training Task 5/5
+2025-07-06 20:41:16,292 [INFO]    Epoch  1/20: Loss = 4.0465
+2025-07-06 20:41:17,731 [INFO]    Epoch  6/20: Loss = 0.2337
+2025-07-06 20:41:19,229 [INFO]    Epoch 11/20: Loss = 0.0661
+2025-07-06 20:41:20,658 [INFO]    Epoch 16/20: Loss = 0.0176
+2025-07-06 20:41:21,806 [INFO]    Epoch 20/20: Loss = 0.0029
+2025-07-06 20:41:21,903 [INFO]    📊 Task 1 accuracy: 0.0000
+2025-07-06 20:41:22,012 [INFO]    📊 Task 2 accuracy: 0.0000
+2025-07-06 20:41:22,110 [INFO]    📊 Task 3 accuracy: 0.0000
+2025-07-06 20:41:22,209 [INFO]    📊 Task 4 accuracy: 0.0000
+2025-07-06 20:41:22,289 [INFO]    📊 Task 5 accuracy: 0.9280
+2025-07-06 20:41:22,289 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:41:22,290 [INFO] 
+🔬 RESEARCH TRIAL COMPLETE:
+   Framework: finetuning
+   Average Accuracy: 0.1856 ± 0.3712
+   Backward Transfer: -0.8600
+   Total Time: 38.76s
+   Memory Peak: N/A MB
+
+2025-07-06 20:41:22,294 [INFO] 🔬 Research seed set to 42 for reproducibility
+2025-07-06 20:41:22,294 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:41:24,063 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:41:24,860 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:41:25,651 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:41:26,461 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:41:27,283 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:41:27,292 [INFO] 🎯 Initializing Fine-tuning Baseline (Control Condition)
+2025-07-06 20:41:27,293 [INFO] 🔬 Starting Research Trial: baseline_run_1
+2025-07-06 20:41:27,293 [INFO] 📋 Framework: finetuning
+2025-07-06 20:41:27,293 [INFO] 📚 Training Task 1/5
+2025-07-06 20:41:28,648 [INFO]    Epoch  1/20: Loss=0.9112, Acc=0.679
+2025-07-06 20:41:30,172 [INFO]    Epoch  6/20: Loss=0.1170, Acc=0.950
+2025-07-06 20:41:31,798 [INFO]    Epoch 11/20: Loss=0.0598, Acc=0.983
+2025-07-06 20:41:33,440 [INFO]    Epoch 16/20: Loss=0.3137, Acc=0.882
+2025-07-06 20:41:34,693 [INFO]    Epoch 20/20: Loss=0.0395, Acc=0.987
+2025-07-06 20:41:34,796 [INFO]    📊 Task 1 accuracy: 0.935
+2025-07-06 20:41:34,797 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:41:34,797 [INFO] 📚 Training Task 2/5
+2025-07-06 20:41:35,538 [INFO]    Epoch  1/20: Loss=2.2438, Acc=0.475
+2025-07-06 20:41:36,999 [INFO]    Epoch  6/20: Loss=0.3803, Acc=0.831
+2025-07-06 20:41:38,478 [INFO]    Epoch 11/20: Loss=0.2214, Acc=0.905
+2025-07-06 20:41:39,958 [INFO]    Epoch 16/20: Loss=0.1403, Acc=0.952
+2025-07-06 20:41:41,149 [INFO]    Epoch 20/20: Loss=0.1095, Acc=0.964
+2025-07-06 20:41:41,251 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:41:41,353 [INFO]    📊 Task 2 accuracy: 0.829
+2025-07-06 20:41:41,353 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:41:41,353 [INFO] 📚 Training Task 3/5
+2025-07-06 20:41:42,085 [INFO]    Epoch  1/20: Loss=7.0756, Acc=0.000
+2025-07-06 20:41:43,560 [INFO]    Epoch  6/20: Loss=2.1920, Acc=0.513
+2025-07-06 20:41:45,113 [INFO]    Epoch 11/20: Loss=2.0784, Acc=0.513
+2025-07-06 20:41:46,614 [INFO]    Epoch 16/20: Loss=1.9700, Acc=0.513
+2025-07-06 20:41:47,850 [INFO]    Epoch 20/20: Loss=1.8873, Acc=0.513
+2025-07-06 20:41:47,952 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:41:48,051 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:41:48,141 [INFO]    📊 Task 3 accuracy: 0.500
+2025-07-06 20:41:48,141 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:41:48,142 [INFO] 📚 Training Task 4/5
+2025-07-06 20:41:48,974 [INFO]    Epoch  1/20: Loss=2.3799, Acc=0.000
+2025-07-06 20:41:50,422 [INFO]    Epoch  6/20: Loss=0.6677, Acc=0.720
+2025-07-06 20:41:51,927 [INFO]    Epoch 11/20: Loss=0.4458, Acc=0.801
+2025-07-06 20:41:53,447 [INFO]    Epoch 16/20: Loss=0.3107, Acc=0.888
+2025-07-06 20:41:54,684 [INFO]    Epoch 20/20: Loss=0.2979, Acc=0.877
+2025-07-06 20:41:54,779 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:41:54,873 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:41:54,966 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:41:55,060 [INFO]    📊 Task 4 accuracy: 0.941
+2025-07-06 20:41:55,060 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:41:55,061 [INFO] 📚 Training Task 5/5
+2025-07-06 20:41:55,749 [INFO]    Epoch  1/20: Loss=9.6595, Acc=0.000
+2025-07-06 20:41:57,187 [INFO]    Epoch  6/20: Loss=1.3144, Acc=0.514
+2025-07-06 20:41:58,704 [INFO]    Epoch 11/20: Loss=0.4189, Acc=0.824
+2025-07-06 20:42:00,185 [INFO]    Epoch 16/20: Loss=0.3871, Acc=0.843
+2025-07-06 20:42:01,390 [INFO]    Epoch 20/20: Loss=0.3254, Acc=0.859
+2025-07-06 20:42:01,492 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:42:01,589 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:42:01,686 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:42:01,779 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:42:01,873 [INFO]    📊 Task 5 accuracy: 0.924
+2025-07-06 20:42:01,873 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:42:01,874 [INFO] ✅ Trial Complete: baseline_run_1
+2025-07-06 20:42:01,874 [INFO] 📊 Average Accuracy: 0.185
+2025-07-06 20:42:01,874 [INFO] 📉 Backward Transfer: -0.801
+2025-07-06 20:42:01,875 [INFO] ⏱️  Duration: 39.6s
+2025-07-06 20:42:01,879 [INFO] 🔬 Research seed set to 43 for reproducibility
+2025-07-06 20:42:01,879 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:42:03,552 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:42:04,348 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:42:05,135 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:42:05,918 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:42:06,702 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:42:06,712 [INFO] 🎯 Initializing Fine-tuning Baseline (Control Condition)
+2025-07-06 20:42:06,712 [INFO] 🔬 Starting Research Trial: baseline_run_2
+2025-07-06 20:42:06,712 [INFO] 📋 Framework: finetuning
+2025-07-06 20:42:06,712 [INFO] 📚 Training Task 1/5
+2025-07-06 20:42:06,980 [INFO]    Epoch  1/20: Loss=0.8200, Acc=0.720
+2025-07-06 20:42:08,562 [INFO]    Epoch  6/20: Loss=0.1914, Acc=0.916
+2025-07-06 20:42:10,148 [INFO]    Epoch 11/20: Loss=0.0720, Acc=0.980
+2025-07-06 20:42:11,722 [INFO]    Epoch 16/20: Loss=0.1273, Acc=0.944
+2025-07-06 20:42:12,959 [INFO]    Epoch 20/20: Loss=0.0340, Acc=0.991
+2025-07-06 20:42:13,060 [INFO]    📊 Task 1 accuracy: 0.942
+2025-07-06 20:42:13,061 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:42:13,061 [INFO] 📚 Training Task 2/5
+2025-07-06 20:42:13,357 [INFO]    Epoch  1/20: Loss=3.7164, Acc=0.381
+2025-07-06 20:42:14,870 [INFO]    Epoch  6/20: Loss=0.4535, Acc=0.801
+2025-07-06 20:42:16,402 [INFO]    Epoch 11/20: Loss=0.3560, Acc=0.848
+2025-07-06 20:42:17,938 [INFO]    Epoch 16/20: Loss=0.2580, Acc=0.894
+2025-07-06 20:42:19,162 [INFO]    Epoch 20/20: Loss=0.1974, Acc=0.924
+2025-07-06 20:42:19,267 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:42:19,362 [INFO]    📊 Task 2 accuracy: 0.833
+2025-07-06 20:42:19,363 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:42:19,363 [INFO] 📚 Training Task 3/5
+2025-07-06 20:42:19,657 [INFO]    Epoch  1/20: Loss=8.2359, Acc=0.000
+2025-07-06 20:42:21,187 [INFO]    Epoch  6/20: Loss=0.8146, Acc=0.574
+2025-07-06 20:42:22,714 [INFO]    Epoch 11/20: Loss=0.4105, Acc=0.850
+2025-07-06 20:42:24,232 [INFO]    Epoch 16/20: Loss=0.3543, Acc=0.885
+2025-07-06 20:42:25,464 [INFO]    Epoch 20/20: Loss=0.3612, Acc=0.892
+2025-07-06 20:42:25,567 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:42:25,665 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:42:25,763 [INFO]    📊 Task 3 accuracy: 0.926
+2025-07-06 20:42:25,763 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:42:25,763 [INFO] 📚 Training Task 4/5
+2025-07-06 20:42:26,057 [INFO]    Epoch  1/20: Loss=9.5441, Acc=0.000
+2025-07-06 20:42:27,560 [INFO]    Epoch  6/20: Loss=2.2316, Acc=0.000
+2025-07-06 20:42:29,014 [INFO]    Epoch 11/20: Loss=2.0385, Acc=0.380
+2025-07-06 20:42:30,476 [INFO]    Epoch 16/20: Loss=1.8097, Acc=0.256
+2025-07-06 20:42:31,845 [INFO]    Epoch 20/20: Loss=1.6047, Acc=0.560
+2025-07-06 20:42:31,937 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:42:32,028 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:42:32,122 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:42:32,216 [INFO]    📊 Task 4 accuracy: 0.595
+2025-07-06 20:42:32,217 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:42:32,217 [INFO] 📚 Training Task 5/5
+2025-07-06 20:42:32,504 [INFO]    Epoch  1/20: Loss=2.6984, Acc=0.000
+2025-07-06 20:42:34,071 [INFO]    Epoch  6/20: Loss=2.3419, Acc=0.000
+2025-07-06 20:42:35,600 [INFO]    Epoch 11/20: Loss=1.5362, Acc=0.424
+2025-07-06 20:42:37,134 [INFO]    Epoch 16/20: Loss=1.1451, Acc=0.443
+2025-07-06 20:42:38,317 [INFO]    Epoch 20/20: Loss=0.8109, Acc=0.444
+2025-07-06 20:42:38,419 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:42:38,518 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:42:38,612 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:42:38,705 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:42:38,800 [INFO]    📊 Task 5 accuracy: 0.507
+2025-07-06 20:42:38,801 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:42:38,801 [INFO] ✅ Trial Complete: baseline_run_2
+2025-07-06 20:42:38,801 [INFO] 📊 Average Accuracy: 0.101
+2025-07-06 20:42:38,802 [INFO] 📉 Backward Transfer: -0.824
+2025-07-06 20:42:38,802 [INFO] ⏱️  Duration: 36.9s
+2025-07-06 20:42:38,806 [INFO] 🔬 Research seed set to 44 for reproducibility
+2025-07-06 20:42:38,806 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:42:40,516 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:42:41,300 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:42:42,082 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:42:42,864 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:42:43,652 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:42:43,663 [INFO] 🎯 Initializing Fine-tuning Baseline (Control Condition)
+2025-07-06 20:42:43,664 [INFO] 🔬 Starting Research Trial: baseline_run_3
+2025-07-06 20:42:43,664 [INFO] 📋 Framework: finetuning
+2025-07-06 20:42:43,664 [INFO] 📚 Training Task 1/5
+2025-07-06 20:42:43,939 [INFO]    Epoch  1/20: Loss=0.8556, Acc=0.683
+2025-07-06 20:42:45,506 [INFO]    Epoch  6/20: Loss=0.1633, Acc=0.936
+2025-07-06 20:42:47,066 [INFO]    Epoch 11/20: Loss=0.0901, Acc=0.969
+2025-07-06 20:42:48,658 [INFO]    Epoch 16/20: Loss=0.0477, Acc=0.983
+2025-07-06 20:42:49,929 [INFO]    Epoch 20/20: Loss=0.0961, Acc=0.957
+2025-07-06 20:42:50,029 [INFO]    📊 Task 1 accuracy: 0.924
+2025-07-06 20:42:50,030 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:42:50,030 [INFO] 📚 Training Task 2/5
+2025-07-06 20:42:50,332 [INFO]    Epoch  1/20: Loss=2.9782, Acc=0.393
+2025-07-06 20:42:51,892 [INFO]    Epoch  6/20: Loss=0.4920, Acc=0.759
+2025-07-06 20:42:53,406 [INFO]    Epoch 11/20: Loss=0.3667, Acc=0.837
+2025-07-06 20:42:54,902 [INFO]    Epoch 16/20: Loss=0.2709, Acc=0.884
+2025-07-06 20:42:56,140 [INFO]    Epoch 20/20: Loss=0.2298, Acc=0.907
+2025-07-06 20:42:56,244 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:42:56,341 [INFO]    📊 Task 2 accuracy: 0.830
+2025-07-06 20:42:56,341 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:42:56,342 [INFO] 📚 Training Task 3/5
+2025-07-06 20:42:56,633 [INFO]    Epoch  1/20: Loss=7.0722, Acc=0.000
+2025-07-06 20:42:58,161 [INFO]    Epoch  6/20: Loss=2.2052, Acc=0.487
+2025-07-06 20:42:59,696 [INFO]    Epoch 11/20: Loss=2.0915, Acc=0.487
+2025-07-06 20:43:01,190 [INFO]    Epoch 16/20: Loss=1.9829, Acc=0.487
+2025-07-06 20:43:02,401 [INFO]    Epoch 20/20: Loss=1.9002, Acc=0.487
+2025-07-06 20:43:02,505 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:43:02,602 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:43:02,698 [INFO]    📊 Task 3 accuracy: 0.500
+2025-07-06 20:43:02,699 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:43:02,699 [INFO] 📚 Training Task 4/5
+2025-07-06 20:43:02,984 [INFO]    Epoch  1/20: Loss=2.5095, Acc=0.000
+2025-07-06 20:43:04,479 [INFO]    Epoch  6/20: Loss=2.3793, Acc=0.000
+2025-07-06 20:43:05,963 [INFO]    Epoch 11/20: Loss=2.2542, Acc=0.000
+2025-07-06 20:43:07,450 [INFO]    Epoch 16/20: Loss=2.1351, Acc=0.000
+2025-07-06 20:43:08,619 [INFO]    Epoch 20/20: Loss=2.0443, Acc=0.000
+2025-07-06 20:43:08,718 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:43:08,816 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:43:08,912 [INFO]    📊 Task 3 accuracy: 0.500
+2025-07-06 20:43:09,030 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:43:09,030 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:43:09,030 [INFO] 📚 Training Task 5/5
+2025-07-06 20:43:09,315 [INFO]    Epoch  1/20: Loss=2.6034, Acc=0.000
+2025-07-06 20:43:10,797 [INFO]    Epoch  6/20: Loss=2.4703, Acc=0.000
+2025-07-06 20:43:12,284 [INFO]    Epoch 11/20: Loss=2.3423, Acc=0.000
+2025-07-06 20:43:13,942 [INFO]    Epoch 16/20: Loss=2.2198, Acc=0.000
+2025-07-06 20:43:15,136 [INFO]    Epoch 20/20: Loss=2.1262, Acc=0.344
+2025-07-06 20:43:15,232 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:43:15,328 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:43:15,422 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:43:15,521 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:43:15,615 [INFO]    📊 Task 5 accuracy: 0.500
+2025-07-06 20:43:15,616 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:43:15,616 [INFO] ✅ Trial Complete: baseline_run_3
+2025-07-06 20:43:15,616 [INFO] 📊 Average Accuracy: 0.100
+2025-07-06 20:43:15,617 [INFO] 📉 Backward Transfer: -0.564
+2025-07-06 20:43:15,617 [INFO] ⏱️  Duration: 36.8s
+2025-07-06 20:43:15,623 [INFO] 🔬 Research seed set to 45 for reproducibility
+2025-07-06 20:43:15,624 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:43:17,333 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:43:18,119 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:43:18,915 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:43:19,707 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:43:20,519 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:43:20,527 [INFO] 🎯 Initializing Fine-tuning Baseline (Control Condition)
+2025-07-06 20:43:20,527 [INFO] 🔬 Starting Research Trial: baseline_run_4
+2025-07-06 20:43:20,528 [INFO] 📋 Framework: finetuning
+2025-07-06 20:43:20,528 [INFO] 📚 Training Task 1/5
+2025-07-06 20:43:20,801 [INFO]    Epoch  1/20: Loss=0.7001, Acc=0.746
+2025-07-06 20:43:22,419 [INFO]    Epoch  6/20: Loss=0.1229, Acc=0.951
+2025-07-06 20:43:24,041 [INFO]    Epoch 11/20: Loss=0.0713, Acc=0.971
+2025-07-06 20:43:25,594 [INFO]    Epoch 16/20: Loss=0.0337, Acc=0.986
+2025-07-06 20:43:26,858 [INFO]    Epoch 20/20: Loss=0.0263, Acc=0.989
+2025-07-06 20:43:26,959 [INFO]    📊 Task 1 accuracy: 0.921
+2025-07-06 20:43:26,959 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:43:26,959 [INFO] 📚 Training Task 2/5
+2025-07-06 20:43:27,247 [INFO]    Epoch  1/20: Loss=3.2213, Acc=0.499
+2025-07-06 20:43:28,737 [INFO]    Epoch  6/20: Loss=0.3874, Acc=0.829
+2025-07-06 20:43:30,195 [INFO]    Epoch 11/20: Loss=0.2869, Acc=0.869
+2025-07-06 20:43:31,625 [INFO]    Epoch 16/20: Loss=0.1970, Acc=0.918
+2025-07-06 20:43:32,817 [INFO]    Epoch 20/20: Loss=0.1266, Acc=0.960
+2025-07-06 20:43:32,916 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:43:33,014 [INFO]    📊 Task 2 accuracy: 0.823
+2025-07-06 20:43:33,015 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:43:33,015 [INFO] 📚 Training Task 3/5
+2025-07-06 20:43:33,307 [INFO]    Epoch  1/20: Loss=8.6488, Acc=0.000
+2025-07-06 20:43:34,790 [INFO]    Epoch  6/20: Loss=2.1850, Acc=0.513
+2025-07-06 20:43:36,303 [INFO]    Epoch 11/20: Loss=2.0722, Acc=0.513
+2025-07-06 20:43:37,779 [INFO]    Epoch 16/20: Loss=1.9645, Acc=0.513
+2025-07-06 20:43:38,972 [INFO]    Epoch 20/20: Loss=1.8824, Acc=0.513
+2025-07-06 20:43:39,071 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:43:39,167 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:43:39,262 [INFO]    📊 Task 3 accuracy: 0.500
+2025-07-06 20:43:39,263 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:43:39,263 [INFO] 📚 Training Task 4/5
+2025-07-06 20:43:39,550 [INFO]    Epoch  1/20: Loss=2.4833, Acc=0.000
+2025-07-06 20:43:41,034 [INFO]    Epoch  6/20: Loss=2.3532, Acc=0.000
+2025-07-06 20:43:42,542 [INFO]    Epoch 11/20: Loss=2.2289, Acc=0.000
+2025-07-06 20:43:43,957 [INFO]    Epoch 16/20: Loss=2.1107, Acc=0.000
+2025-07-06 20:43:45,098 [INFO]    Epoch 20/20: Loss=2.0209, Acc=0.000
+2025-07-06 20:43:45,196 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:43:45,294 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:43:45,421 [INFO]    📊 Task 3 accuracy: 0.500
+2025-07-06 20:43:45,527 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:43:45,527 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:43:45,528 [INFO] 📚 Training Task 5/5
+2025-07-06 20:43:45,822 [INFO]    Epoch  1/20: Loss=2.6358, Acc=0.000
+2025-07-06 20:43:47,255 [INFO]    Epoch  6/20: Loss=2.5016, Acc=0.000
+2025-07-06 20:43:48,695 [INFO]    Epoch 11/20: Loss=2.3725, Acc=0.000
+2025-07-06 20:43:50,209 [INFO]    Epoch 16/20: Loss=2.2489, Acc=0.000
+2025-07-06 20:43:51,398 [INFO]    Epoch 20/20: Loss=2.1543, Acc=0.000
+2025-07-06 20:43:51,496 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:43:51,594 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:43:51,693 [INFO]    📊 Task 3 accuracy: 0.500
+2025-07-06 20:43:51,792 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:43:51,888 [INFO]    📊 Task 5 accuracy: 0.000
+2025-07-06 20:43:51,888 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:43:51,889 [INFO] ✅ Trial Complete: baseline_run_4
+2025-07-06 20:43:51,889 [INFO] 📊 Average Accuracy: 0.100
+2025-07-06 20:43:51,889 [INFO] 📉 Backward Transfer: -0.436
+2025-07-06 20:43:51,890 [INFO] ⏱️  Duration: 36.3s
+2025-07-06 20:43:51,894 [INFO] 🔬 Research seed set to 46 for reproducibility
+2025-07-06 20:43:51,894 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:43:53,575 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:43:54,363 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:43:55,149 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:43:55,936 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:43:56,723 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:43:56,734 [INFO] 🎯 Initializing Fine-tuning Baseline (Control Condition)
+2025-07-06 20:43:56,734 [INFO] 🔬 Starting Research Trial: baseline_run_5
+2025-07-06 20:43:56,734 [INFO] 📋 Framework: finetuning
+2025-07-06 20:43:56,735 [INFO] 📚 Training Task 1/5
+2025-07-06 20:43:57,010 [INFO]    Epoch  1/20: Loss=0.9951, Acc=0.660
+2025-07-06 20:43:58,611 [INFO]    Epoch  6/20: Loss=0.2379, Acc=0.901
+2025-07-06 20:44:00,182 [INFO]    Epoch 11/20: Loss=0.0713, Acc=0.975
+2025-07-06 20:44:01,723 [INFO]    Epoch 16/20: Loss=0.0312, Acc=0.992
+2025-07-06 20:44:02,982 [INFO]    Epoch 20/20: Loss=0.0971, Acc=0.964
+2025-07-06 20:44:03,082 [INFO]    📊 Task 1 accuracy: 0.903
+2025-07-06 20:44:03,082 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:44:03,082 [INFO] 📚 Training Task 2/5
+2025-07-06 20:44:03,382 [INFO]    Epoch  1/20: Loss=2.6861, Acc=0.503
+2025-07-06 20:44:04,840 [INFO]    Epoch  6/20: Loss=0.3468, Acc=0.849
+2025-07-06 20:44:06,339 [INFO]    Epoch 11/20: Loss=0.2290, Acc=0.917
+2025-07-06 20:44:07,830 [INFO]    Epoch 16/20: Loss=0.1560, Acc=0.942
+2025-07-06 20:44:09,042 [INFO]    Epoch 20/20: Loss=0.1051, Acc=0.972
+2025-07-06 20:44:09,147 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:44:09,240 [INFO]    📊 Task 2 accuracy: 0.823
+2025-07-06 20:44:09,240 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:44:09,240 [INFO] 📚 Training Task 3/5
+2025-07-06 20:44:09,525 [INFO]    Epoch  1/20: Loss=6.0749, Acc=0.000
+2025-07-06 20:44:11,000 [INFO]    Epoch  6/20: Loss=0.8821, Acc=0.500
+2025-07-06 20:44:12,449 [INFO]    Epoch 11/20: Loss=0.8414, Acc=0.493
+2025-07-06 20:44:13,900 [INFO]    Epoch 16/20: Loss=0.8377, Acc=0.494
+2025-07-06 20:44:15,114 [INFO]    Epoch 20/20: Loss=0.8441, Acc=0.518
+2025-07-06 20:44:15,213 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:44:15,309 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:44:15,390 [INFO]    📊 Task 3 accuracy: 0.500
+2025-07-06 20:44:15,390 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:44:15,390 [INFO] 📚 Training Task 4/5
+2025-07-06 20:44:15,635 [INFO]    Epoch  1/20: Loss=11.6434, Acc=0.000
+2025-07-06 20:44:17,123 [INFO]    Epoch  6/20: Loss=2.1764, Acc=0.000
+2025-07-06 20:44:18,644 [INFO]    Epoch 11/20: Loss=0.6572, Acc=0.744
+2025-07-06 20:44:20,126 [INFO]    Epoch 16/20: Loss=0.5151, Acc=0.783
+2025-07-06 20:44:21,274 [INFO]    Epoch 20/20: Loss=0.4987, Acc=0.779
+2025-07-06 20:44:21,374 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:44:21,476 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:44:21,571 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:44:21,666 [INFO]    📊 Task 4 accuracy: 0.891
+2025-07-06 20:44:21,666 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:44:21,667 [INFO] 📚 Training Task 5/5
+2025-07-06 20:44:21,956 [INFO]    Epoch  1/20: Loss=11.6192, Acc=0.000
+2025-07-06 20:44:23,422 [INFO]    Epoch  6/20: Loss=0.6356, Acc=0.725
+2025-07-06 20:44:24,935 [INFO]    Epoch 11/20: Loss=0.3958, Acc=0.817
+2025-07-06 20:44:26,442 [INFO]    Epoch 16/20: Loss=0.2739, Acc=0.885
+2025-07-06 20:44:27,649 [INFO]    Epoch 20/20: Loss=0.1864, Acc=0.927
+2025-07-06 20:44:27,748 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:44:27,846 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:44:27,943 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:44:28,040 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:44:28,134 [INFO]    📊 Task 5 accuracy: 0.929
+2025-07-06 20:44:28,134 [INFO] 📝 Fine-tuning baseline: Task completed (no consolidation)
+2025-07-06 20:44:28,135 [INFO] ✅ Trial Complete: baseline_run_5
+2025-07-06 20:44:28,135 [INFO] 📊 Average Accuracy: 0.186
+2025-07-06 20:44:28,135 [INFO] 📉 Backward Transfer: -0.779
+2025-07-06 20:44:28,135 [INFO] ⏱️  Duration: 36.2s
+2025-07-06 20:44:28,143 [INFO] 🔬 Research seed set to 42 for reproducibility
+2025-07-06 20:44:28,143 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:44:29,807 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:44:30,589 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:44:31,397 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:44:32,209 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:44:32,998 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:44:33,008 [INFO] 🧠 Initializing BICL Framework
+2025-07-06 20:44:33,009 [INFO]    β (consolidation strength): 1000.0
+2025-07-06 20:44:33,009 [INFO]    α (importance decay): 0.99
+2025-07-06 20:44:33,009 [INFO] 🔬 Starting Research Trial: rigidity_run_1
+2025-07-06 20:44:33,010 [INFO] 📋 Framework: bicl
+2025-07-06 20:44:33,010 [INFO] 📚 Training Task 1/5
+2025-07-06 20:44:34,508 [INFO]    Epoch  1/20: Loss=1.0356, Acc=0.680
+2025-07-06 20:44:38,170 [INFO]    Epoch  6/20: Loss=0.4140, Acc=0.900
+2025-07-06 20:44:41,814 [INFO]    Epoch 11/20: Loss=0.2789, Acc=0.940
+2025-07-06 20:44:45,503 [INFO]    Epoch 16/20: Loss=0.2602, Acc=0.951
+2025-07-06 20:44:48,327 [INFO]    Epoch 20/20: Loss=0.5046, Acc=0.929
+2025-07-06 20:44:48,423 [INFO]    📊 Task 1 accuracy: 0.899
+2025-07-06 20:44:48,437 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:44:48,437 [INFO]    📊 Average importance: 0.012029
+2025-07-06 20:44:48,437 [INFO]    🛡️  Protected parameters: 59.9%
+2025-07-06 20:44:48,438 [INFO]    📈 Total parameter change: 4.242338
+2025-07-06 20:44:48,438 [INFO] 📚 Training Task 2/5
+2025-07-06 20:44:49,127 [INFO]    Epoch  1/20: Loss=nan, Acc=0.345
+2025-07-06 20:44:52,295 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:44:55,624 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:44:58,988 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:01,754 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:01,854 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:45:01,957 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:45:01,972 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:45:01,972 [INFO]    📊 Average importance: nan
+2025-07-06 20:45:01,972 [INFO]    🛡️  Protected parameters: 19.4%
+2025-07-06 20:45:01,973 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:45:01,973 [INFO] 📚 Training Task 3/5
+2025-07-06 20:45:02,649 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:05,991 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:09,374 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:12,759 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:15,475 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:15,578 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:45:15,679 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:45:15,775 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:45:15,789 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:45:15,790 [INFO]    📊 Average importance: nan
+2025-07-06 20:45:15,790 [INFO]    🛡️  Protected parameters: 0.5%
+2025-07-06 20:45:15,790 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:45:15,791 [INFO] 📚 Training Task 4/5
+2025-07-06 20:45:16,438 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:19,819 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:23,179 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:26,505 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:29,200 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:29,296 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:45:29,389 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:45:29,483 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:45:29,579 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:45:29,592 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:45:29,592 [INFO]    📊 Average importance: nan
+2025-07-06 20:45:29,592 [INFO]    🛡️  Protected parameters: 0.0%
+2025-07-06 20:45:29,593 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:45:29,593 [INFO] 📚 Training Task 5/5
+2025-07-06 20:45:30,261 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:33,564 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:36,938 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:40,248 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:42,946 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:45:43,049 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:45:43,146 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:45:43,243 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:45:43,339 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:45:43,432 [INFO]    📊 Task 5 accuracy: 0.000
+2025-07-06 20:45:43,445 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:45:43,446 [INFO]    📊 Average importance: nan
+2025-07-06 20:45:43,446 [INFO]    🛡️  Protected parameters: 0.0%
+2025-07-06 20:45:43,446 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:45:43,458 [INFO] ✅ Trial Complete: rigidity_run_1
+2025-07-06 20:45:43,459 [INFO] 📊 Average Accuracy: 0.000
+2025-07-06 20:45:43,459 [INFO] 📉 Backward Transfer: -0.225
+2025-07-06 20:45:43,459 [INFO] ⏱️  Duration: 75.3s
+2025-07-06 20:45:43,468 [INFO] 🔬 Research seed set to 43 for reproducibility
+2025-07-06 20:45:43,468 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:45:45,160 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:45:45,954 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:45:46,747 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:45:47,539 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:45:48,330 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:45:48,341 [INFO] 🧠 Initializing BICL Framework
+2025-07-06 20:45:48,341 [INFO]    β (consolidation strength): 1000.0
+2025-07-06 20:45:48,341 [INFO]    α (importance decay): 0.99
+2025-07-06 20:45:48,342 [INFO] 🔬 Starting Research Trial: rigidity_run_2
+2025-07-06 20:45:48,342 [INFO] 📋 Framework: bicl
+2025-07-06 20:45:48,342 [INFO] 📚 Training Task 1/5
+2025-07-06 20:45:49,013 [INFO]    Epoch  1/20: Loss=0.9283, Acc=0.718
+2025-07-06 20:45:52,661 [INFO]    Epoch  6/20: Loss=0.5352, Acc=0.868
+2025-07-06 20:45:56,352 [INFO]    Epoch 11/20: Loss=0.3070, Acc=0.943
+2025-07-06 20:46:00,027 [INFO]    Epoch 16/20: Loss=0.4619, Acc=0.913
+2025-07-06 20:46:02,980 [INFO]    Epoch 20/20: Loss=0.3828, Acc=0.911
+2025-07-06 20:46:03,103 [INFO]    📊 Task 1 accuracy: 0.847
+2025-07-06 20:46:03,116 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:46:03,116 [INFO]    📊 Average importance: 0.001851
+2025-07-06 20:46:03,117 [INFO]    🛡️  Protected parameters: 53.0%
+2025-07-06 20:46:03,117 [INFO]    📈 Total parameter change: 4.295336
+2025-07-06 20:46:03,117 [INFO] 📚 Training Task 2/5
+2025-07-06 20:46:03,791 [INFO]    Epoch  1/20: Loss=3.0395, Acc=0.509
+2025-07-06 20:46:07,229 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:10,712 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:14,053 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:16,635 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:16,738 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:46:16,835 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:46:16,848 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:46:16,848 [INFO]    📊 Average importance: nan
+2025-07-06 20:46:16,849 [INFO]    🛡️  Protected parameters: 8.6%
+2025-07-06 20:46:16,849 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:46:16,849 [INFO] 📚 Training Task 3/5
+2025-07-06 20:46:17,483 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:20,840 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:24,230 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:27,614 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:30,332 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:30,429 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:46:30,520 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:46:30,599 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:46:30,610 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:46:30,610 [INFO]    📊 Average importance: nan
+2025-07-06 20:46:30,611 [INFO]    🛡️  Protected parameters: 0.2%
+2025-07-06 20:46:30,611 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:46:30,611 [INFO] 📚 Training Task 4/5
+2025-07-06 20:46:31,222 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:34,610 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:38,044 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:41,416 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:44,107 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:44,212 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:46:44,309 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:46:44,407 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:46:44,502 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:46:44,515 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:46:44,516 [INFO]    📊 Average importance: nan
+2025-07-06 20:46:44,516 [INFO]    🛡️  Protected parameters: 0.0%
+2025-07-06 20:46:44,516 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:46:44,517 [INFO] 📚 Training Task 5/5
+2025-07-06 20:46:45,175 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:48,619 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:52,022 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:55,382 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:58,036 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:46:58,135 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:46:58,236 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:46:58,337 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:46:58,433 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:46:58,531 [INFO]    📊 Task 5 accuracy: 0.000
+2025-07-06 20:46:58,545 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:46:58,546 [INFO]    📊 Average importance: nan
+2025-07-06 20:46:58,546 [INFO]    🛡️  Protected parameters: 0.0%
+2025-07-06 20:46:58,546 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:46:58,558 [INFO] ✅ Trial Complete: rigidity_run_2
+2025-07-06 20:46:58,559 [INFO] 📊 Average Accuracy: 0.000
+2025-07-06 20:46:58,559 [INFO] 📉 Backward Transfer: -0.212
+2025-07-06 20:46:58,559 [INFO] ⏱️  Duration: 75.1s
+2025-07-06 20:46:58,566 [INFO] 🔬 Research seed set to 44 for reproducibility
+2025-07-06 20:46:58,567 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:47:00,288 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:47:01,090 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:47:01,895 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:47:02,687 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:47:03,480 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:47:03,491 [INFO] 🧠 Initializing BICL Framework
+2025-07-06 20:47:03,491 [INFO]    β (consolidation strength): 1000.0
+2025-07-06 20:47:03,491 [INFO]    α (importance decay): 0.99
+2025-07-06 20:47:03,492 [INFO] 🔬 Starting Research Trial: rigidity_run_3
+2025-07-06 20:47:03,492 [INFO] 📋 Framework: bicl
+2025-07-06 20:47:03,492 [INFO] 📚 Training Task 1/5
+2025-07-06 20:47:04,151 [INFO]    Epoch  1/20: Loss=0.9646, Acc=0.683
+2025-07-06 20:47:07,697 [INFO]    Epoch  6/20: Loss=0.3857, Acc=0.921
+2025-07-06 20:47:11,309 [INFO]    Epoch 11/20: Loss=0.2849, Acc=0.940
+2025-07-06 20:47:14,847 [INFO]    Epoch 16/20: Loss=0.3417, Acc=0.906
+2025-07-06 20:47:17,693 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:17,796 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:47:17,809 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:47:17,810 [INFO]    📊 Average importance: nan
+2025-07-06 20:47:17,810 [INFO]    🛡️  Protected parameters: 3.8%
+2025-07-06 20:47:17,810 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:47:17,810 [INFO] 📚 Training Task 2/5
+2025-07-06 20:47:18,476 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:21,835 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:25,247 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:28,649 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:31,431 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:31,528 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:47:31,623 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:47:31,635 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:47:31,636 [INFO]    📊 Average importance: nan
+2025-07-06 20:47:31,636 [INFO]    🛡️  Protected parameters: 0.0%
+2025-07-06 20:47:31,636 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:47:31,637 [INFO] 📚 Training Task 3/5
+2025-07-06 20:47:32,380 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:35,905 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:39,475 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:42,954 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:45,702 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:45,806 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:47:45,903 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:47:46,011 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:47:46,024 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:47:46,024 [INFO]    📊 Average importance: nan
+2025-07-06 20:47:46,024 [INFO]    🛡️  Protected parameters: 0.0%
+2025-07-06 20:47:46,025 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:47:46,025 [INFO] 📚 Training Task 4/5
+2025-07-06 20:47:46,678 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:50,068 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:53,419 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:56,995 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:59,694 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:47:59,788 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:47:59,883 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:47:59,977 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:48:00,072 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:48:00,085 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:48:00,085 [INFO]    📊 Average importance: nan
+2025-07-06 20:48:00,085 [INFO]    🛡️  Protected parameters: 0.0%
+2025-07-06 20:48:00,086 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:48:00,086 [INFO] 📚 Training Task 5/5
+2025-07-06 20:48:00,738 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:48:04,044 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:48:07,432 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:48:11,115 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:48:13,953 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:48:14,070 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:48:14,187 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:48:14,301 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:48:14,420 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:48:14,526 [INFO]    📊 Task 5 accuracy: 0.000
+2025-07-06 20:48:14,541 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:48:14,541 [INFO]    📊 Average importance: nan
+2025-07-06 20:48:14,541 [INFO]    🛡️  Protected parameters: 0.0%
+2025-07-06 20:48:14,541 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:48:14,555 [INFO] ✅ Trial Complete: rigidity_run_3
+2025-07-06 20:48:14,555 [INFO] 📊 Average Accuracy: 0.000
+2025-07-06 20:48:14,556 [INFO] 📉 Backward Transfer: 0.000
+2025-07-06 20:48:14,556 [INFO] ⏱️  Duration: 76.0s
+2025-07-06 20:48:14,565 [INFO] 🔬 Research seed set to 45 for reproducibility
+2025-07-06 20:48:14,566 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:48:16,322 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:48:17,202 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:48:18,049 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:48:18,845 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:48:19,635 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:48:19,643 [INFO] 🧠 Initializing BICL Framework
+2025-07-06 20:48:19,644 [INFO]    β (consolidation strength): 1000.0
+2025-07-06 20:48:19,644 [INFO]    α (importance decay): 0.99
+2025-07-06 20:48:19,644 [INFO] 🔬 Starting Research Trial: rigidity_run_4
+2025-07-06 20:48:19,644 [INFO] 📋 Framework: bicl
+2025-07-06 20:48:19,645 [INFO] 📚 Training Task 1/5
+2025-07-06 20:48:20,423 [INFO]    Epoch  1/20: Loss=0.7879, Acc=0.746
+2025-07-06 20:48:23,948 [INFO]    Epoch  6/20: Loss=0.4084, Acc=0.913
+2025-07-06 20:48:27,543 [INFO]    Epoch 11/20: Loss=0.2503, Acc=0.956
+2025-07-06 20:48:31,232 [INFO]    Epoch 16/20: Loss=0.2736, Acc=0.935
+2025-07-06 20:48:34,219 [INFO]    Epoch 20/20: Loss=0.1862, Acc=0.972
+2025-07-06 20:48:34,321 [INFO]    📊 Task 1 accuracy: 0.924
+2025-07-06 20:48:34,335 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:48:34,335 [INFO]    📊 Average importance: 0.000766
+2025-07-06 20:48:34,335 [INFO]    🛡️  Protected parameters: 55.0%
+2025-07-06 20:48:34,335 [INFO]    📈 Total parameter change: 4.682403
+2025-07-06 20:48:34,336 [INFO] 📚 Training Task 2/5
+2025-07-06 20:48:34,994 [INFO]    Epoch  1/20: Loss=3.0237, Acc=0.522
+2025-07-06 20:48:38,437 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:48:41,830 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:48:45,258 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:48:47,924 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:48:48,010 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:48:48,105 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:48:48,117 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:48:48,117 [INFO]    📊 Average importance: nan
+2025-07-06 20:48:48,118 [INFO]    🛡️  Protected parameters: 6.9%
+2025-07-06 20:48:48,118 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:48:48,118 [INFO] 📚 Training Task 3/5
+2025-07-06 20:48:48,853 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:48:52,424 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:48:56,019 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:48:59,383 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:02,180 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:02,283 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:49:02,383 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:49:02,496 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:49:02,510 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:49:02,510 [INFO]    📊 Average importance: nan
+2025-07-06 20:49:02,511 [INFO]    🛡️  Protected parameters: 0.1%
+2025-07-06 20:49:02,511 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:49:02,512 [INFO] 📚 Training Task 4/5
+2025-07-06 20:49:03,202 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:06,651 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:10,498 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:14,045 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:16,986 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:17,114 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:49:17,233 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:49:17,345 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:49:17,453 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:49:17,489 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:49:17,489 [INFO]    📊 Average importance: nan
+2025-07-06 20:49:17,490 [INFO]    🛡️  Protected parameters: 0.0%
+2025-07-06 20:49:17,490 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:49:17,490 [INFO] 📚 Training Task 5/5
+2025-07-06 20:49:18,231 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:21,864 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:25,252 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:28,740 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:31,498 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:31,593 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:49:31,687 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:49:31,782 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:49:31,878 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:49:31,971 [INFO]    📊 Task 5 accuracy: 0.000
+2025-07-06 20:49:31,984 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:49:31,985 [INFO]    📊 Average importance: nan
+2025-07-06 20:49:31,985 [INFO]    🛡️  Protected parameters: 0.0%
+2025-07-06 20:49:31,985 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:49:31,997 [INFO] ✅ Trial Complete: rigidity_run_4
+2025-07-06 20:49:31,997 [INFO] 📊 Average Accuracy: 0.000
+2025-07-06 20:49:31,998 [INFO] 📉 Backward Transfer: -0.231
+2025-07-06 20:49:31,998 [INFO] ⏱️  Duration: 77.4s
+2025-07-06 20:49:32,007 [INFO] 🔬 Research seed set to 46 for reproducibility
+2025-07-06 20:49:32,008 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:49:33,787 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:49:34,609 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:49:35,426 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:49:36,239 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:49:37,046 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:49:37,057 [INFO] 🧠 Initializing BICL Framework
+2025-07-06 20:49:37,058 [INFO]    β (consolidation strength): 1000.0
+2025-07-06 20:49:37,058 [INFO]    α (importance decay): 0.99
+2025-07-06 20:49:37,058 [INFO] 🔬 Starting Research Trial: rigidity_run_5
+2025-07-06 20:49:37,059 [INFO] 📋 Framework: bicl
+2025-07-06 20:49:37,059 [INFO] 📚 Training Task 1/5
+2025-07-06 20:49:37,737 [INFO]    Epoch  1/20: Loss=1.1241, Acc=0.659
+2025-07-06 20:49:41,298 [INFO]    Epoch  6/20: Loss=0.4824, Acc=0.881
+2025-07-06 20:49:45,134 [INFO]    Epoch 11/20: Loss=0.5234, Acc=0.889
+2025-07-06 20:49:48,745 [INFO]    Epoch 16/20: Loss=0.4895, Acc=0.883
+2025-07-06 20:49:51,656 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:51,758 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:49:51,771 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:49:51,771 [INFO]    📊 Average importance: nan
+2025-07-06 20:49:51,772 [INFO]    🛡️  Protected parameters: 13.0%
+2025-07-06 20:49:51,772 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:49:51,772 [INFO] 📚 Training Task 2/5
+2025-07-06 20:49:52,439 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:55,773 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:49:59,157 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:02,592 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:05,340 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:05,444 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:50:05,544 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:50:05,557 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:50:05,558 [INFO]    📊 Average importance: nan
+2025-07-06 20:50:05,558 [INFO]    🛡️  Protected parameters: 5.5%
+2025-07-06 20:50:05,558 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:50:05,559 [INFO] 📚 Training Task 3/5
+2025-07-06 20:50:06,221 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:09,821 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:13,281 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:16,564 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:19,232 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:19,326 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:50:19,426 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:50:19,525 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:50:19,538 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:50:19,538 [INFO]    📊 Average importance: nan
+2025-07-06 20:50:19,539 [INFO]    🛡️  Protected parameters: 0.0%
+2025-07-06 20:50:19,539 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:50:19,539 [INFO] 📚 Training Task 4/5
+2025-07-06 20:50:20,206 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:23,575 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:26,978 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:30,332 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:33,110 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:33,217 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:50:33,322 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:50:33,470 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:50:33,582 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:50:33,596 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:50:33,597 [INFO]    📊 Average importance: nan
+2025-07-06 20:50:33,597 [INFO]    🛡️  Protected parameters: 0.0%
+2025-07-06 20:50:33,597 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:50:33,597 [INFO] 📚 Training Task 5/5
+2025-07-06 20:50:34,273 [INFO]    Epoch  1/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:37,648 [INFO]    Epoch  6/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:41,055 [INFO]    Epoch 11/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:44,357 [INFO]    Epoch 16/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:47,055 [INFO]    Epoch 20/20: Loss=nan, Acc=0.000
+2025-07-06 20:50:47,159 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:50:47,258 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:50:47,354 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:50:47,446 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:50:47,544 [INFO]    📊 Task 5 accuracy: 0.000
+2025-07-06 20:50:47,557 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:50:47,557 [INFO]    📊 Average importance: nan
+2025-07-06 20:50:47,558 [INFO]    🛡️  Protected parameters: 0.0%
+2025-07-06 20:50:47,558 [INFO]    📈 Total parameter change: nan
+2025-07-06 20:50:47,569 [INFO] ✅ Trial Complete: rigidity_run_5
+2025-07-06 20:50:47,569 [INFO] 📊 Average Accuracy: 0.000
+2025-07-06 20:50:47,570 [INFO] 📉 Backward Transfer: 0.000
+2025-07-06 20:50:47,570 [INFO] ⏱️  Duration: 75.6s
+2025-07-06 20:50:47,579 [INFO] 🔬 Research seed set to 42 for reproducibility
+2025-07-06 20:50:47,579 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:50:49,323 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:50:50,126 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:50:50,943 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:50:51,738 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:50:52,529 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:50:52,539 [INFO] 🧠 Initializing BICL Framework
+2025-07-06 20:50:52,539 [INFO]    β (consolidation strength): 100.0
+2025-07-06 20:50:52,540 [INFO]    α (importance decay): 0.99
+2025-07-06 20:50:52,540 [INFO] 🔬 Starting Research Trial: goldilocks_run_1
+2025-07-06 20:50:52,540 [INFO] 📋 Framework: bicl
+2025-07-06 20:50:52,540 [INFO] 📚 Training Task 1/5
+2025-07-06 20:50:53,194 [INFO]    Epoch  1/20: Loss=1.1116, Acc=0.548
+2025-07-06 20:50:57,047 [INFO]    Epoch  6/20: Loss=0.2396, Acc=0.891
+2025-07-06 20:51:00,674 [INFO]    Epoch 11/20: Loss=0.1493, Acc=0.948
+2025-07-06 20:51:04,315 [INFO]    Epoch 16/20: Loss=0.1218, Acc=0.966
+2025-07-06 20:51:07,488 [INFO]    Epoch 20/20: Loss=0.0870, Acc=0.978
+2025-07-06 20:51:07,589 [INFO]    📊 Task 1 accuracy: 0.909
+2025-07-06 20:51:07,602 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:51:07,602 [INFO]    📊 Average importance: 0.000815
+2025-07-06 20:51:07,603 [INFO]    🛡️  Protected parameters: 76.3%
+2025-07-06 20:51:07,603 [INFO]    📈 Total parameter change: 1.754337
+2025-07-06 20:51:07,603 [INFO] 📚 Training Task 2/5
+2025-07-06 20:51:08,279 [INFO]    Epoch  1/20: Loss=4.5853, Acc=0.181
+2025-07-06 20:51:11,771 [INFO]    Epoch  6/20: Loss=0.5292, Acc=0.759
+2025-07-06 20:51:15,223 [INFO]    Epoch 11/20: Loss=0.3660, Acc=0.842
+2025-07-06 20:51:18,716 [INFO]    Epoch 16/20: Loss=0.2639, Acc=0.904
+2025-07-06 20:51:21,473 [INFO]    Epoch 20/20: Loss=0.2204, Acc=0.939
+2025-07-06 20:51:21,575 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:51:21,683 [INFO]    📊 Task 2 accuracy: 0.804
+2025-07-06 20:51:21,698 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:51:21,699 [INFO]    📊 Average importance: 0.000999
+2025-07-06 20:51:21,699 [INFO]    🛡️  Protected parameters: 92.7%
+2025-07-06 20:51:21,699 [INFO]    📈 Total parameter change: 2.243134
+2025-07-06 20:51:21,700 [INFO] 📚 Training Task 3/5
+2025-07-06 20:51:22,452 [INFO]    Epoch  1/20: Loss=4.8830, Acc=0.158
+2025-07-06 20:51:26,015 [INFO]    Epoch  6/20: Loss=0.2914, Acc=0.893
+2025-07-06 20:51:29,390 [INFO]    Epoch 11/20: Loss=0.1992, Acc=0.926
+2025-07-06 20:51:32,832 [INFO]    Epoch 16/20: Loss=0.1464, Acc=0.948
+2025-07-06 20:51:35,558 [INFO]    Epoch 20/20: Loss=0.1057, Acc=0.966
+2025-07-06 20:51:35,657 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:51:35,761 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:51:35,866 [INFO]    📊 Task 3 accuracy: 0.924
+2025-07-06 20:51:35,880 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:51:35,881 [INFO]    📊 Average importance: 0.000925
+2025-07-06 20:51:35,881 [INFO]    🛡️  Protected parameters: 88.4%
+2025-07-06 20:51:35,881 [INFO]    📈 Total parameter change: 1.727657
+2025-07-06 20:51:35,882 [INFO] 📚 Training Task 4/5
+2025-07-06 20:51:36,571 [INFO]    Epoch  1/20: Loss=6.1879, Acc=0.109
+2025-07-06 20:51:39,977 [INFO]    Epoch  6/20: Loss=0.3214, Acc=0.895
+2025-07-06 20:51:43,446 [INFO]    Epoch 11/20: Loss=0.2068, Acc=0.928
+2025-07-06 20:51:46,849 [INFO]    Epoch 16/20: Loss=0.1462, Acc=0.954
+2025-07-06 20:51:49,589 [INFO]    Epoch 20/20: Loss=0.1246, Acc=0.960
+2025-07-06 20:51:49,689 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:51:49,788 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:51:49,883 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:51:49,981 [INFO]    📊 Task 4 accuracy: 0.928
+2025-07-06 20:51:50,004 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:51:50,005 [INFO]    📊 Average importance: 0.001071
+2025-07-06 20:51:50,005 [INFO]    🛡️  Protected parameters: 80.8%
+2025-07-06 20:51:50,006 [INFO]    📈 Total parameter change: 1.881785
+2025-07-06 20:51:50,007 [INFO] 📚 Training Task 5/5
+2025-07-06 20:51:50,681 [INFO]    Epoch  1/20: Loss=7.7557, Acc=0.052
+2025-07-06 20:51:54,122 [INFO]    Epoch  6/20: Loss=0.4042, Acc=0.860
+2025-07-06 20:51:57,470 [INFO]    Epoch 11/20: Loss=0.2513, Acc=0.911
+2025-07-06 20:52:00,925 [INFO]    Epoch 16/20: Loss=0.1899, Acc=0.944
+2025-07-06 20:52:03,804 [INFO]    Epoch 20/20: Loss=0.1537, Acc=0.949
+2025-07-06 20:52:03,903 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:52:03,999 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:52:04,097 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:52:04,191 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:52:04,290 [INFO]    📊 Task 5 accuracy: 0.922
+2025-07-06 20:52:04,304 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:52:04,304 [INFO]    📊 Average importance: 0.001562
+2025-07-06 20:52:04,305 [INFO]    🛡️  Protected parameters: 76.4%
+2025-07-06 20:52:04,305 [INFO]    📈 Total parameter change: 1.914350
+2025-07-06 20:52:04,317 [INFO] ✅ Trial Complete: goldilocks_run_1
+2025-07-06 20:52:04,318 [INFO] 📊 Average Accuracy: 0.184
+2025-07-06 20:52:04,318 [INFO] 📉 Backward Transfer: -0.891
+2025-07-06 20:52:04,318 [INFO] ⏱️  Duration: 76.7s
+2025-07-06 20:52:04,327 [INFO] 🔬 Research seed set to 43 for reproducibility
+2025-07-06 20:52:04,327 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:52:06,099 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:52:06,959 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:52:07,787 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:52:08,612 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:52:09,450 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:52:09,459 [INFO] 🧠 Initializing BICL Framework
+2025-07-06 20:52:09,459 [INFO]    β (consolidation strength): 100.0
+2025-07-06 20:52:09,460 [INFO]    α (importance decay): 0.99
+2025-07-06 20:52:09,460 [INFO] 🔬 Starting Research Trial: goldilocks_run_2
+2025-07-06 20:52:09,460 [INFO] 📋 Framework: bicl
+2025-07-06 20:52:09,460 [INFO] 📚 Training Task 1/5
+2025-07-06 20:52:10,139 [INFO]    Epoch  1/20: Loss=1.4430, Acc=0.431
+2025-07-06 20:52:13,665 [INFO]    Epoch  6/20: Loss=0.2716, Acc=0.892
+2025-07-06 20:52:17,277 [INFO]    Epoch 11/20: Loss=0.1968, Acc=0.944
+2025-07-06 20:52:21,245 [INFO]    Epoch 16/20: Loss=0.1506, Acc=0.952
+2025-07-06 20:52:24,475 [INFO]    Epoch 20/20: Loss=0.1092, Acc=0.971
+2025-07-06 20:52:24,584 [INFO]    📊 Task 1 accuracy: 0.915
+2025-07-06 20:52:24,599 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:52:24,600 [INFO]    📊 Average importance: 0.000656
+2025-07-06 20:52:24,600 [INFO]    🛡️  Protected parameters: 79.0%
+2025-07-06 20:52:24,601 [INFO]    📈 Total parameter change: 1.713460
+2025-07-06 20:52:24,601 [INFO] 📚 Training Task 2/5
+2025-07-06 20:52:25,363 [INFO]    Epoch  1/20: Loss=5.0010, Acc=0.101
+2025-07-06 20:52:29,149 [INFO]    Epoch  6/20: Loss=0.4594, Acc=0.810
+2025-07-06 20:52:32,992 [INFO]    Epoch 11/20: Loss=0.3408, Acc=0.876
+2025-07-06 20:52:36,815 [INFO]    Epoch 16/20: Loss=0.2620, Acc=0.917
+2025-07-06 20:52:39,829 [INFO]    Epoch 20/20: Loss=0.2095, Acc=0.935
+2025-07-06 20:52:39,969 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:52:40,082 [INFO]    📊 Task 2 accuracy: 0.800
+2025-07-06 20:52:40,097 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:52:40,098 [INFO]    📊 Average importance: 0.000880
+2025-07-06 20:52:40,098 [INFO]    🛡️  Protected parameters: 90.6%
+2025-07-06 20:52:40,098 [INFO]    📈 Total parameter change: 2.111067
+2025-07-06 20:52:40,099 [INFO] 📚 Training Task 3/5
+2025-07-06 20:52:40,853 [INFO]    Epoch  1/20: Loss=4.6411, Acc=0.171
+2025-07-06 20:52:44,564 [INFO]    Epoch  6/20: Loss=0.3105, Acc=0.877
+2025-07-06 20:52:48,198 [INFO]    Epoch 11/20: Loss=0.1907, Acc=0.941
+2025-07-06 20:52:51,638 [INFO]    Epoch 16/20: Loss=0.1354, Acc=0.953
+2025-07-06 20:52:54,374 [INFO]    Epoch 20/20: Loss=0.1115, Acc=0.961
+2025-07-06 20:52:54,474 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:52:54,570 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:52:54,665 [INFO]    📊 Task 3 accuracy: 0.928
+2025-07-06 20:52:54,678 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:52:54,679 [INFO]    📊 Average importance: 0.000707
+2025-07-06 20:52:54,679 [INFO]    🛡️  Protected parameters: 84.1%
+2025-07-06 20:52:54,679 [INFO]    📈 Total parameter change: 1.885992
+2025-07-06 20:52:54,680 [INFO] 📚 Training Task 4/5
+2025-07-06 20:52:55,336 [INFO]    Epoch  1/20: Loss=5.0761, Acc=0.158
+2025-07-06 20:52:58,746 [INFO]    Epoch  6/20: Loss=0.3285, Acc=0.881
+2025-07-06 20:53:02,375 [INFO]    Epoch 11/20: Loss=0.1898, Acc=0.932
+2025-07-06 20:53:05,845 [INFO]    Epoch 16/20: Loss=0.1542, Acc=0.943
+2025-07-06 20:53:08,526 [INFO]    Epoch 20/20: Loss=0.1097, Acc=0.970
+2025-07-06 20:53:08,631 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:53:08,731 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:53:08,836 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:53:08,967 [INFO]    📊 Task 4 accuracy: 0.911
+2025-07-06 20:53:08,981 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:53:08,982 [INFO]    📊 Average importance: 0.000783
+2025-07-06 20:53:08,982 [INFO]    🛡️  Protected parameters: 82.1%
+2025-07-06 20:53:08,982 [INFO]    📈 Total parameter change: 1.955736
+2025-07-06 20:53:08,983 [INFO] 📚 Training Task 5/5
+2025-07-06 20:53:09,655 [INFO]    Epoch  1/20: Loss=6.1725, Acc=0.103
+2025-07-06 20:53:13,028 [INFO]    Epoch  6/20: Loss=0.3644, Acc=0.870
+2025-07-06 20:53:16,433 [INFO]    Epoch 11/20: Loss=0.2305, Acc=0.919
+2025-07-06 20:53:19,904 [INFO]    Epoch 16/20: Loss=0.1601, Acc=0.941
+2025-07-06 20:53:22,709 [INFO]    Epoch 20/20: Loss=0.1240, Acc=0.961
+2025-07-06 20:53:22,810 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:53:22,915 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:53:23,021 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:53:23,126 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:53:23,224 [INFO]    📊 Task 5 accuracy: 0.918
+2025-07-06 20:53:23,238 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:53:23,239 [INFO]    📊 Average importance: 0.000969
+2025-07-06 20:53:23,239 [INFO]    🛡️  Protected parameters: 84.1%
+2025-07-06 20:53:23,239 [INFO]    📈 Total parameter change: 1.916685
+2025-07-06 20:53:23,253 [INFO] ✅ Trial Complete: goldilocks_run_2
+2025-07-06 20:53:23,254 [INFO] 📊 Average Accuracy: 0.184
+2025-07-06 20:53:23,254 [INFO] 📉 Backward Transfer: -0.889
+2025-07-06 20:53:23,254 [INFO] ⏱️  Duration: 78.9s
+2025-07-06 20:53:23,262 [INFO] 🔬 Research seed set to 44 for reproducibility
+2025-07-06 20:53:23,263 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:53:25,063 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:53:25,895 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:53:26,715 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:53:27,550 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:53:28,358 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:53:28,367 [INFO] 🧠 Initializing BICL Framework
+2025-07-06 20:53:28,368 [INFO]    β (consolidation strength): 100.0
+2025-07-06 20:53:28,368 [INFO]    α (importance decay): 0.99
+2025-07-06 20:53:28,368 [INFO] 🔬 Starting Research Trial: goldilocks_run_3
+2025-07-06 20:53:28,369 [INFO] 📋 Framework: bicl
+2025-07-06 20:53:28,369 [INFO] 📚 Training Task 1/5
+2025-07-06 20:53:29,069 [INFO]    Epoch  1/20: Loss=1.1860, Acc=0.561
+2025-07-06 20:53:32,750 [INFO]    Epoch  6/20: Loss=0.2828, Acc=0.891
+2025-07-06 20:53:36,396 [INFO]    Epoch 11/20: Loss=0.2011, Acc=0.923
+2025-07-06 20:53:40,063 [INFO]    Epoch 16/20: Loss=0.1523, Acc=0.952
+2025-07-06 20:53:43,002 [INFO]    Epoch 20/20: Loss=0.1302, Acc=0.966
+2025-07-06 20:53:43,100 [INFO]    📊 Task 1 accuracy: 0.921
+2025-07-06 20:53:43,113 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:53:43,114 [INFO]    📊 Average importance: 0.000610
+2025-07-06 20:53:43,114 [INFO]    🛡️  Protected parameters: 76.3%
+2025-07-06 20:53:43,114 [INFO]    📈 Total parameter change: 1.703049
+2025-07-06 20:53:43,115 [INFO] 📚 Training Task 2/5
+2025-07-06 20:53:43,800 [INFO]    Epoch  1/20: Loss=5.5228, Acc=0.116
+2025-07-06 20:53:47,295 [INFO]    Epoch  6/20: Loss=0.5183, Acc=0.771
+2025-07-06 20:53:50,719 [INFO]    Epoch 11/20: Loss=0.3806, Acc=0.835
+2025-07-06 20:53:54,214 [INFO]    Epoch 16/20: Loss=0.3108, Acc=0.881
+2025-07-06 20:53:56,985 [INFO]    Epoch 20/20: Loss=0.2651, Acc=0.896
+2025-07-06 20:53:57,090 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:53:57,192 [INFO]    📊 Task 2 accuracy: 0.809
+2025-07-06 20:53:57,205 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:53:57,206 [INFO]    📊 Average importance: 0.000864
+2025-07-06 20:53:57,206 [INFO]    🛡️  Protected parameters: 89.3%
+2025-07-06 20:53:57,206 [INFO]    📈 Total parameter change: 2.163222
+2025-07-06 20:53:57,207 [INFO] 📚 Training Task 3/5
+2025-07-06 20:53:57,876 [INFO]    Epoch  1/20: Loss=4.5833, Acc=0.188
+2025-07-06 20:54:01,276 [INFO]    Epoch  6/20: Loss=0.2996, Acc=0.892
+2025-07-06 20:54:04,778 [INFO]    Epoch 11/20: Loss=0.1949, Acc=0.934
+2025-07-06 20:54:08,274 [INFO]    Epoch 16/20: Loss=0.1583, Acc=0.948
+2025-07-06 20:54:11,079 [INFO]    Epoch 20/20: Loss=0.1144, Acc=0.968
+2025-07-06 20:54:11,183 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:54:11,278 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:54:11,373 [INFO]    📊 Task 3 accuracy: 0.932
+2025-07-06 20:54:11,386 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:54:11,386 [INFO]    📊 Average importance: 0.000668
+2025-07-06 20:54:11,386 [INFO]    🛡️  Protected parameters: 84.9%
+2025-07-06 20:54:11,387 [INFO]    📈 Total parameter change: 1.928905
+2025-07-06 20:54:11,387 [INFO] 📚 Training Task 4/5
+2025-07-06 20:54:12,048 [INFO]    Epoch  1/20: Loss=5.2814, Acc=0.132
+2025-07-06 20:54:15,476 [INFO]    Epoch  6/20: Loss=0.3377, Acc=0.887
+2025-07-06 20:54:19,101 [INFO]    Epoch 11/20: Loss=0.2084, Acc=0.930
+2025-07-06 20:54:22,648 [INFO]    Epoch 16/20: Loss=0.1420, Acc=0.950
+2025-07-06 20:54:25,510 [INFO]    Epoch 20/20: Loss=0.1089, Acc=0.966
+2025-07-06 20:54:25,604 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:54:25,703 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:54:25,801 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:54:25,946 [INFO]    📊 Task 4 accuracy: 0.922
+2025-07-06 20:54:25,959 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:54:25,959 [INFO]    📊 Average importance: 0.000801
+2025-07-06 20:54:25,960 [INFO]    🛡️  Protected parameters: 79.2%
+2025-07-06 20:54:25,960 [INFO]    📈 Total parameter change: 1.925437
+2025-07-06 20:54:25,960 [INFO] 📚 Training Task 5/5
+2025-07-06 20:54:26,642 [INFO]    Epoch  1/20: Loss=5.4042, Acc=0.118
+2025-07-06 20:54:30,169 [INFO]    Epoch  6/20: Loss=0.3754, Acc=0.857
+2025-07-06 20:54:33,745 [INFO]    Epoch 11/20: Loss=0.2574, Acc=0.909
+2025-07-06 20:54:37,320 [INFO]    Epoch 16/20: Loss=0.1845, Acc=0.935
+2025-07-06 20:54:40,131 [INFO]    Epoch 20/20: Loss=0.1388, Acc=0.952
+2025-07-06 20:54:40,246 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:54:40,351 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:54:40,449 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:54:40,535 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:54:40,625 [INFO]    📊 Task 5 accuracy: 0.913
+2025-07-06 20:54:40,640 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:54:40,641 [INFO]    📊 Average importance: 0.001009
+2025-07-06 20:54:40,641 [INFO]    🛡️  Protected parameters: 76.6%
+2025-07-06 20:54:40,641 [INFO]    📈 Total parameter change: 1.867641
+2025-07-06 20:54:40,654 [INFO] ✅ Trial Complete: goldilocks_run_3
+2025-07-06 20:54:40,654 [INFO] 📊 Average Accuracy: 0.183
+2025-07-06 20:54:40,655 [INFO] 📉 Backward Transfer: -0.896
+2025-07-06 20:54:40,655 [INFO] ⏱️  Duration: 77.4s
+2025-07-06 20:54:40,663 [INFO] 🔬 Research seed set to 45 for reproducibility
+2025-07-06 20:54:40,663 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:54:42,361 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:54:43,149 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:54:43,957 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:54:44,766 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:54:45,589 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:54:45,600 [INFO] 🧠 Initializing BICL Framework
+2025-07-06 20:54:45,601 [INFO]    β (consolidation strength): 100.0
+2025-07-06 20:54:45,601 [INFO]    α (importance decay): 0.99
+2025-07-06 20:54:45,601 [INFO] 🔬 Starting Research Trial: goldilocks_run_4
+2025-07-06 20:54:45,602 [INFO] 📋 Framework: bicl
+2025-07-06 20:54:45,602 [INFO] 📚 Training Task 1/5
+2025-07-06 20:54:46,377 [INFO]    Epoch  1/20: Loss=1.1781, Acc=0.545
+2025-07-06 20:54:49,988 [INFO]    Epoch  6/20: Loss=0.2659, Acc=0.883
+2025-07-06 20:54:53,740 [INFO]    Epoch 11/20: Loss=0.1823, Acc=0.932
+2025-07-06 20:54:57,426 [INFO]    Epoch 16/20: Loss=0.1277, Acc=0.962
+2025-07-06 20:55:00,336 [INFO]    Epoch 20/20: Loss=0.0996, Acc=0.976
+2025-07-06 20:55:00,442 [INFO]    📊 Task 1 accuracy: 0.924
+2025-07-06 20:55:00,456 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:55:00,456 [INFO]    📊 Average importance: 0.000308
+2025-07-06 20:55:00,456 [INFO]    🛡️  Protected parameters: 74.9%
+2025-07-06 20:55:00,457 [INFO]    📈 Total parameter change: 1.836762
+2025-07-06 20:55:00,457 [INFO] 📚 Training Task 2/5
+2025-07-06 20:55:01,135 [INFO]    Epoch  1/20: Loss=4.5760, Acc=0.192
+2025-07-06 20:55:04,654 [INFO]    Epoch  6/20: Loss=0.5107, Acc=0.780
+2025-07-06 20:55:08,167 [INFO]    Epoch 11/20: Loss=0.3796, Acc=0.846
+2025-07-06 20:55:11,641 [INFO]    Epoch 16/20: Loss=0.2934, Acc=0.883
+2025-07-06 20:55:14,409 [INFO]    Epoch 20/20: Loss=0.2437, Acc=0.913
+2025-07-06 20:55:14,512 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:55:14,611 [INFO]    📊 Task 2 accuracy: 0.796
+2025-07-06 20:55:14,623 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:55:14,624 [INFO]    📊 Average importance: 0.000768
+2025-07-06 20:55:14,624 [INFO]    🛡️  Protected parameters: 91.7%
+2025-07-06 20:55:14,624 [INFO]    📈 Total parameter change: 2.056772
+2025-07-06 20:55:14,625 [INFO] 📚 Training Task 3/5
+2025-07-06 20:55:15,312 [INFO]    Epoch  1/20: Loss=4.8127, Acc=0.196
+2025-07-06 20:55:18,836 [INFO]    Epoch  6/20: Loss=0.3324, Acc=0.866
+2025-07-06 20:55:22,328 [INFO]    Epoch 11/20: Loss=0.2265, Acc=0.931
+2025-07-06 20:55:25,830 [INFO]    Epoch 16/20: Loss=0.1776, Acc=0.941
+2025-07-06 20:55:28,652 [INFO]    Epoch 20/20: Loss=0.1292, Acc=0.960
+2025-07-06 20:55:28,757 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:55:28,858 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:55:28,955 [INFO]    📊 Task 3 accuracy: 0.927
+2025-07-06 20:55:28,969 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:55:28,969 [INFO]    📊 Average importance: 0.000737
+2025-07-06 20:55:28,969 [INFO]    🛡️  Protected parameters: 90.6%
+2025-07-06 20:55:28,970 [INFO]    📈 Total parameter change: 1.852585
+2025-07-06 20:55:28,970 [INFO] 📚 Training Task 4/5
+2025-07-06 20:55:29,640 [INFO]    Epoch  1/20: Loss=4.8331, Acc=0.179
+2025-07-06 20:55:33,131 [INFO]    Epoch  6/20: Loss=0.3178, Acc=0.893
+2025-07-06 20:55:36,640 [INFO]    Epoch 11/20: Loss=0.2025, Acc=0.931
+2025-07-06 20:55:40,136 [INFO]    Epoch 16/20: Loss=0.1476, Acc=0.950
+2025-07-06 20:55:42,921 [INFO]    Epoch 20/20: Loss=0.1168, Acc=0.971
+2025-07-06 20:55:43,026 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:55:43,123 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:55:43,222 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:55:43,316 [INFO]    📊 Task 4 accuracy: 0.907
+2025-07-06 20:55:43,329 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:55:43,329 [INFO]    📊 Average importance: 0.000700
+2025-07-06 20:55:43,330 [INFO]    🛡️  Protected parameters: 87.1%
+2025-07-06 20:55:43,330 [INFO]    📈 Total parameter change: 1.991550
+2025-07-06 20:55:43,330 [INFO] 📚 Training Task 5/5
+2025-07-06 20:55:44,004 [INFO]    Epoch  1/20: Loss=5.5689, Acc=0.146
+2025-07-06 20:55:47,491 [INFO]    Epoch  6/20: Loss=0.3647, Acc=0.863
+2025-07-06 20:55:51,002 [INFO]    Epoch 11/20: Loss=0.2398, Acc=0.917
+2025-07-06 20:55:54,522 [INFO]    Epoch 16/20: Loss=0.2206, Acc=0.919
+2025-07-06 20:55:57,326 [INFO]    Epoch 20/20: Loss=0.1712, Acc=0.941
+2025-07-06 20:55:57,433 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:55:57,535 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:55:57,631 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:55:57,728 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:55:57,824 [INFO]    📊 Task 5 accuracy: 0.894
+2025-07-06 20:55:57,837 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:55:57,838 [INFO]    📊 Average importance: 0.000915
+2025-07-06 20:55:57,838 [INFO]    🛡️  Protected parameters: 86.5%
+2025-07-06 20:55:57,838 [INFO]    📈 Total parameter change: 1.883472
+2025-07-06 20:55:57,851 [INFO] ✅ Trial Complete: goldilocks_run_4
+2025-07-06 20:55:57,851 [INFO] 📊 Average Accuracy: 0.179
+2025-07-06 20:55:57,852 [INFO] 📉 Backward Transfer: -0.889
+2025-07-06 20:55:57,852 [INFO] ⏱️  Duration: 77.2s
+2025-07-06 20:55:57,859 [INFO] 🔬 Research seed set to 46 for reproducibility
+2025-07-06 20:55:57,860 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 20:55:59,560 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 20:56:00,355 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 20:56:01,147 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 20:56:01,961 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 20:56:02,763 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
+2025-07-06 20:56:02,774 [INFO] 🧠 Initializing BICL Framework
+2025-07-06 20:56:02,774 [INFO]    β (consolidation strength): 100.0
+2025-07-06 20:56:02,774 [INFO]    α (importance decay): 0.99
+2025-07-06 20:56:02,774 [INFO] 🔬 Starting Research Trial: goldilocks_run_5
+2025-07-06 20:56:02,775 [INFO] 📋 Framework: bicl
+2025-07-06 20:56:02,775 [INFO] 📚 Training Task 1/5
+2025-07-06 20:56:03,468 [INFO]    Epoch  1/20: Loss=0.9951, Acc=0.584
+2025-07-06 20:56:07,170 [INFO]    Epoch  6/20: Loss=0.2678, Acc=0.895
+2025-07-06 20:56:10,874 [INFO]    Epoch 11/20: Loss=0.1459, Acc=0.951
+2025-07-06 20:56:14,485 [INFO]    Epoch 16/20: Loss=0.1293, Acc=0.955
+2025-07-06 20:56:17,256 [INFO]    Epoch 20/20: Loss=0.1055, Acc=0.971
+2025-07-06 20:56:17,355 [INFO]    📊 Task 1 accuracy: 0.912
+2025-07-06 20:56:17,368 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:56:17,368 [INFO]    📊 Average importance: 0.000794
+2025-07-06 20:56:17,369 [INFO]    🛡️  Protected parameters: 81.9%
+2025-07-06 20:56:17,369 [INFO]    📈 Total parameter change: 1.703727
+2025-07-06 20:56:17,370 [INFO] 📚 Training Task 2/5
+2025-07-06 20:56:18,023 [INFO]    Epoch  1/20: Loss=4.8700, Acc=0.187
+2025-07-06 20:56:21,454 [INFO]    Epoch  6/20: Loss=0.4874, Acc=0.775
+2025-07-06 20:56:24,950 [INFO]    Epoch 11/20: Loss=0.3519, Acc=0.870
+2025-07-06 20:56:28,474 [INFO]    Epoch 16/20: Loss=0.2909, Acc=0.887
+2025-07-06 20:56:31,293 [INFO]    Epoch 20/20: Loss=0.2462, Acc=0.917
+2025-07-06 20:56:31,396 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:56:31,497 [INFO]    📊 Task 2 accuracy: 0.787
+2025-07-06 20:56:31,510 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:56:31,511 [INFO]    📊 Average importance: 0.000893
+2025-07-06 20:56:31,511 [INFO]    🛡️  Protected parameters: 92.4%
+2025-07-06 20:56:31,511 [INFO]    📈 Total parameter change: 1.958901
+2025-07-06 20:56:31,512 [INFO] 📚 Training Task 3/5
+2025-07-06 20:56:32,198 [INFO]    Epoch  1/20: Loss=6.0485, Acc=0.106
+2025-07-06 20:56:35,739 [INFO]    Epoch  6/20: Loss=0.3108, Acc=0.880
+2025-07-06 20:56:39,256 [INFO]    Epoch 11/20: Loss=0.1965, Acc=0.927
+2025-07-06 20:56:42,778 [INFO]    Epoch 16/20: Loss=0.1432, Acc=0.949
+2025-07-06 20:56:45,525 [INFO]    Epoch 20/20: Loss=0.1210, Acc=0.959
+2025-07-06 20:56:45,630 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:56:45,733 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:56:45,829 [INFO]    📊 Task 3 accuracy: 0.929
+2025-07-06 20:56:45,842 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:56:45,843 [INFO]    📊 Average importance: 0.000818
+2025-07-06 20:56:45,843 [INFO]    🛡️  Protected parameters: 86.4%
+2025-07-06 20:56:45,843 [INFO]    📈 Total parameter change: 1.919319
+2025-07-06 20:56:45,844 [INFO] 📚 Training Task 4/5
+2025-07-06 20:56:46,522 [INFO]    Epoch  1/20: Loss=5.9147, Acc=0.062
+2025-07-06 20:56:50,021 [INFO]    Epoch  6/20: Loss=0.3416, Acc=0.883
+2025-07-06 20:56:53,586 [INFO]    Epoch 11/20: Loss=0.2183, Acc=0.919
+2025-07-06 20:56:57,217 [INFO]    Epoch 16/20: Loss=0.1588, Acc=0.951
+2025-07-06 20:56:59,946 [INFO]    Epoch 20/20: Loss=0.1292, Acc=0.957
+2025-07-06 20:57:00,043 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:57:00,137 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:57:00,248 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:57:00,340 [INFO]    📊 Task 4 accuracy: 0.927
+2025-07-06 20:57:00,352 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:57:00,353 [INFO]    📊 Average importance: 0.000887
+2025-07-06 20:57:00,353 [INFO]    🛡️  Protected parameters: 81.7%
+2025-07-06 20:57:00,353 [INFO]    📈 Total parameter change: 1.899495
+2025-07-06 20:57:00,354 [INFO] 📚 Training Task 5/5
+2025-07-06 20:57:01,004 [INFO]    Epoch  1/20: Loss=7.3511, Acc=0.060
+2025-07-06 20:57:04,405 [INFO]    Epoch  6/20: Loss=0.3922, Acc=0.875
+2025-07-06 20:57:07,792 [INFO]    Epoch 11/20: Loss=0.2537, Acc=0.911
+2025-07-06 20:57:11,220 [INFO]    Epoch 16/20: Loss=0.1840, Acc=0.929
+2025-07-06 20:57:13,904 [INFO]    Epoch 20/20: Loss=0.1337, Acc=0.963
+2025-07-06 20:57:14,003 [INFO]    📊 Task 1 accuracy: 0.000
+2025-07-06 20:57:14,099 [INFO]    📊 Task 2 accuracy: 0.000
+2025-07-06 20:57:14,192 [INFO]    📊 Task 3 accuracy: 0.000
+2025-07-06 20:57:14,287 [INFO]    📊 Task 4 accuracy: 0.000
+2025-07-06 20:57:14,378 [INFO]    📊 Task 5 accuracy: 0.917
+2025-07-06 20:57:14,390 [INFO] 🧠 BICL Task Completion Analysis:
+2025-07-06 20:57:14,390 [INFO]    📊 Average importance: 0.001114
+2025-07-06 20:57:14,391 [INFO]    🛡️  Protected parameters: 74.7%
+2025-07-06 20:57:14,391 [INFO]    📈 Total parameter change: 2.046425
+2025-07-06 20:57:14,405 [INFO] ✅ Trial Complete: goldilocks_run_5
+2025-07-06 20:57:14,405 [INFO] 📊 Average Accuracy: 0.183
+2025-07-06 20:57:14,405 [INFO] 📉 Backward Transfer: -0.889
+2025-07-06 20:57:14,406 [INFO] ⏱️  Duration: 76.5s
+2025-07-06 20:57:14,429 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 20:57:17,215 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 20:57:21,059 [INFO] 🧠 Initializing BICL Framework
+2025-07-06 20:57:21,059 [INFO]    β (consolidation strength): 1000.0
+2025-07-06 20:57:21,059 [INFO]    α (importance decay): 0.99
+2025-07-06 21:01:33,228 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:01:36,074 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:01:39,809 [INFO] 🧠 Initializing BICL Framework
+2025-07-06 21:01:39,810 [INFO]    β (consolidation strength): 1000.0
+2025-07-06 21:01:39,810 [INFO]    α (importance decay): 0.99
+2025-07-06 21:08:38,571 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:08:41,289 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:08:44,904 [INFO] 🧠 Initializing BICL Framework
+2025-07-06 21:08:44,904 [INFO]    β (consolidation strength): 1000.0
+2025-07-06 21:08:44,904 [INFO]    α (importance decay): 0.99
+2025-07-06 21:10:59,690 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:11:02,417 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:11:06,089 [INFO] 🧠 Initializing BICL Framework
+2025-07-06 21:11:06,090 [INFO]    β (consolidation strength): 1000.0
+2025-07-06 21:11:06,090 [INFO]    α (importance decay): 0.99
+2025-07-06 21:11:13,028 [INFO] 🔧 Using device: mps
+2025-07-06 21:11:33,616 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:14:10,496 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:14:13,291 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:16:49,673 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:16:52,441 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:17:14,775 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:17:17,537 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:19:15,450 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:19:18,194 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:19:21,861 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:19:21,863 [INFO] --- Training on Task 1/5 ---
+2025-07-06 21:25:22,042 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:25:24,796 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:25:28,571 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:25:28,572 [INFO] --- Training on Task 1/5 ---
+2025-07-06 21:25:51,905 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:28:41,954 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:28:44,732 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:28:48,396 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:28:48,397 [INFO] --- Training on Task 1/5 ---
+2025-07-06 21:29:14,110 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:29:16,911 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:29:20,664 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:29:20,665 [INFO] --- Training on Task 1/5 ---
+2025-07-06 21:35:30,032 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:38:21,469 [INFO] ============================================================
+2025-07-06 21:38:21,470 [INFO] 🔬 EXPERIMENT 3: GOLDILOCKS ZONE DISCOVERY
+2025-07-06 21:38:21,471 [INFO] ============================================================
+2025-07-06 21:41:00,649 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:41:13,870 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:42:05,680 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:42:20,116 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:43:04,356 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:43:51,951 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:44:08,816 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:44:12,450 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:45:59,271 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:46:23,800 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:46:27,408 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:47:22,114 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:47:34,533 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:47:38,193 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:47:38,318 [INFO] ============================================================
+2025-07-06 21:47:38,319 [INFO] 🔬 EXPERIMENT 2: RIGIDITY FAILURE MODE ANALYSIS
+2025-07-06 21:47:38,319 [INFO] ============================================================
+2025-07-06 21:47:38,323 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:47:38,324 [INFO] 🔬 Starting research trial: BICL_Rigidity_Failure
+2025-07-06 21:47:41,122 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:48:22,567 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:48:26,198 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:48:26,327 [INFO] ============================================================
+2025-07-06 21:48:26,327 [INFO] 🔬 EXPERIMENT 2: RIGIDITY FAILURE MODE ANALYSIS
+2025-07-06 21:48:26,328 [INFO] ============================================================
+2025-07-06 21:48:26,332 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:48:26,332 [INFO] 🔬 Starting research trial: BICL_Rigidity_Failure
+2025-07-06 21:48:29,131 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:49:32,190 [INFO] 🔧 Using device: mps
+2025-07-06 21:49:54,374 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:49:57,146 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:50:00,893 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:50:00,894 [INFO] --- Training on Task 1/5 ---
+2025-07-06 21:51:03,203 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:51:15,853 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:51:19,654 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:52:29,464 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:52:50,412 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:52:54,018 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:53:09,953 [INFO] ============================================================
+2025-07-06 21:53:09,954 [INFO] 🔬 EXPERIMENT 2: RIGIDITY FAILURE MODE ANALYSIS
+2025-07-06 21:53:09,954 [INFO] ============================================================
+2025-07-06 21:53:09,957 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:53:09,957 [INFO] 🔬 Starting research trial: BICL_Rigidity_Failure
+2025-07-06 21:53:12,742 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:53:45,935 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:53:49,611 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:54:04,605 [INFO] ============================================================
+2025-07-06 21:54:04,605 [INFO] 🔬 EXPERIMENT 2: RIGIDITY FAILURE MODE ANALYSIS
+2025-07-06 21:54:04,606 [INFO] ============================================================
+2025-07-06 21:54:04,607 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:54:04,607 [INFO] 🔬 Starting research trial: BICL_Rigidity_Failure
+2025-07-06 21:54:07,424 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:56:05,350 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:56:08,160 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:56:11,900 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:56:11,901 [INFO] --- Training on Task 1/5 ---
+2025-07-06 21:56:27,598 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:56:41,310 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:56:44,990 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:57:00,573 [INFO] ============================================================
+2025-07-06 21:57:00,574 [INFO] 🔬 EXPERIMENT 2: RIGIDITY FAILURE MODE ANALYSIS
+2025-07-06 21:57:00,575 [INFO] ============================================================
+2025-07-06 21:57:00,575 [INFO] ============================================================
+2025-07-06 21:57:00,575 [INFO] 🔬 EXPERIMENT 2: RIGIDITY FAILURE MODE ANALYSIS
+2025-07-06 21:57:00,575 [INFO] ============================================================
+2025-07-06 21:57:00,576 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 21:57:00,576 [INFO] 🔬 Starting research trial: BICL_Rigidity_Failure
+2025-07-06 21:57:03,426 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 21:57:07,196 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 21:57:07,196 [INFO] 🧠 BICL Framework - β: 1000.0
+2025-07-06 21:57:07,197 [INFO] --- Training on Task 1/5 ---
+2025-07-06 22:00:44,025 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 22:00:46,866 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 22:00:50,584 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 22:00:50,584 [INFO] --- Training on Task 1/5 ---
+2025-07-06 22:01:13,017 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 22:01:23,411 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 22:01:27,118 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 22:01:42,002 [INFO] ============================================================
+2025-07-06 22:01:42,003 [INFO] 🔬 EXPERIMENT 2: RIGIDITY FAILURE MODE ANALYSIS
+2025-07-06 22:01:42,003 [INFO] ============================================================
+2025-07-06 22:01:42,003 [INFO] ============================================================
+2025-07-06 22:01:42,004 [INFO] 🔬 EXPERIMENT 2: RIGIDITY FAILURE MODE ANALYSIS
+2025-07-06 22:01:42,004 [INFO] ============================================================
+2025-07-06 22:01:42,004 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 22:01:42,004 [INFO] 🔬 Starting research trial: BICL_Rigidity_Failure
+2025-07-06 22:01:44,833 [INFO] 📊 Using 20% subset: 10,000 samples
+2025-07-06 22:01:48,585 [INFO]   > Initializing FINAL STABLE BICLFramework.
+2025-07-06 22:01:48,586 [INFO] 🧠 BICL Framework - β: 1000.0
+2025-07-06 22:01:48,586 [INFO] --- Training on Task 1/5 ---
+2025-07-06 22:01:49,275 [INFO]   Epoch 1: Loss=0.6028, Acc=0.8015
+2025-07-06 22:01:52,691 [INFO]   Epoch 6: Loss=0.3264, Acc=0.9010
+2025-07-06 22:01:56,086 [INFO]   Epoch 11: Loss=0.2953, Acc=0.9150
+2025-07-06 22:01:59,814 [INFO]   Epoch 16: Loss=0.2617, Acc=0.9215
+2025-07-06 22:02:02,872 [INFO] Task 1 Final Accuracy: 0.9040
+2025-07-06 22:02:02,872 [INFO] --- Training on Task 2/5 ---
+2025-07-06 22:02:03,556 [INFO]   Epoch 1: Loss=nan, Acc=0.3000
+2025-07-06 22:02:06,974 [INFO]   Epoch 6: Loss=nan, Acc=0.0000
+2025-07-06 22:02:10,363 [INFO]   Epoch 11: Loss=nan, Acc=0.0000
+2025-07-06 22:02:13,995 [INFO]   Epoch 16: Loss=nan, Acc=0.0000
+2025-07-06 22:02:17,307 [INFO] Task 2 Final Accuracy: 0.0000
+2025-07-06 22:02:17,307 [INFO] --- Training on Task 3/5 ---
+2025-07-06 22:02:18,051 [INFO]   Epoch 1: Loss=nan, Acc=0.0000
+2025-07-06 22:02:21,753 [INFO]   Epoch 6: Loss=nan, Acc=0.0000
+2025-07-06 22:02:25,482 [INFO]   Epoch 11: Loss=nan, Acc=0.0000
+2025-07-06 22:02:28,882 [INFO]   Epoch 16: Loss=nan, Acc=0.0000
+2025-07-06 22:02:31,797 [INFO] Task 3 Final Accuracy: 0.0000
+2025-07-06 22:02:31,798 [INFO] --- Training on Task 4/5 ---
+2025-07-06 22:02:32,593 [INFO]   Epoch 1: Loss=nan, Acc=0.0000
+2025-07-06 22:02:36,123 [INFO]   Epoch 6: Loss=nan, Acc=0.0000
+2025-07-06 22:02:39,752 [INFO]   Epoch 11: Loss=nan, Acc=0.0000
+2025-07-06 22:02:43,320 [INFO]   Epoch 16: Loss=nan, Acc=0.0000
+2025-07-06 22:02:46,398 [INFO] Task 4 Final Accuracy: 0.0000
+2025-07-06 22:02:46,398 [INFO] --- Training on Task 5/5 ---
+2025-07-06 22:02:47,204 [INFO]   Epoch 1: Loss=nan, Acc=0.5000
+2025-07-06 22:02:50,723 [INFO]   Epoch 6: Loss=nan, Acc=0.5000
+2025-07-06 22:02:54,135 [INFO]   Epoch 11: Loss=nan, Acc=0.5000
+2025-07-06 22:02:57,479 [INFO]   Epoch 16: Loss=nan, Acc=0.5000
+2025-07-06 22:03:00,452 [INFO] Task 5 Final Accuracy: 0.5000
+2025-07-06 22:03:01,572 [INFO] 🎯 FINAL RESULTS:
+2025-07-06 22:03:01,573 [INFO]    Average Accuracy: 0.1000 ± 0.3669
+2025-07-06 22:03:01,573 [INFO]    Backward Transfer: -0.2260
+2025-07-06 22:03:01,574 [INFO]    Total Training Time: 79.57s
+2025-07-06 22:03:01,574 [INFO]    Memory Efficiency: 8 parameters
+2025-07-06 22:06:40,998 [INFO] 🔧 Using device: mps
+2025-07-06 22:07:34,009 [INFO] 🔧 Using device: mps
+2025-07-06 22:07:36,330 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 22:07:36,332 [INFO] 🔬 Research seed set to 42 for reproducibility
+2025-07-06 22:07:50,247 [INFO] 🔧 Using device: mps
+2025-07-06 22:07:50,262 [INFO] 🔧 Random seed set to 42 (deterministic=ON)
+2025-07-06 22:07:50,263 [INFO] 🔬 Research seed set to 42 for reproducibility
+2025-07-06 22:07:53,075 [INFO] 📊 Using 10% subset: 5,000 samples
+2025-07-06 22:07:55,920 [INFO] 📥 Loading CIFAR-10 dataset for research
+2025-07-06 22:07:57,718 [INFO] 📋 Task 1: Classes [5, 9] (1027 train, 1000 test)
+2025-07-06 22:07:58,541 [INFO] 📋 Task 2: Classes [6, 3] (1009 train, 1000 test)
+2025-07-06 22:07:59,357 [INFO] 📋 Task 3: Classes [1, 2] (1004 train, 1000 test)
+2025-07-06 22:08:00,166 [INFO] 📋 Task 4: Classes [8, 4] (974 train, 1000 test)
+2025-07-06 22:08:00,980 [INFO] 📋 Task 5: Classes [7, 0] (983 train, 1000 test)
