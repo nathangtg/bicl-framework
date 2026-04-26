@@ -9,8 +9,8 @@ The implementation focuses on continual learning under task sequences, with a sp
 At the repository root:
 
 - `bicl-framework/`: main Python project package and experiment code.
-- `Final_BICL_Investigation.ipynb`: exploratory notebook.
-- `Moving_On_V2.pdf`: manuscript/reference document.
+- `Final_BICL_Investigation.ipynb`: Exploratory notebook.
+- `Moving_On_V2.pdf`: version 2 of the manuscript/reference document.
 
 Inside `bicl-framework/`:
 
